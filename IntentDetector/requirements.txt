@@ -1,0 +1,9 @@
+tornado==6.3.3
+langchain==0.0.279
+scikit-learn==1.2.1
+numpy==1.23.5
+uvicorn
+chromadb==0.3.25
+fastapi==0.85.1
+faiss-cpu==1.7.4
+pandas==1.4.3
