@@ -1,4 +1,3 @@
-print("Starting 1", flush=True)
 import sys
 import os
 import argparse
@@ -53,7 +52,7 @@ async def main():
             action = "xval" if args.xval else "train"
             with open(args.data, "r", encoding="utf-8") as f:
                 trainData = json.load(f)
-            ft = VectorizerConnector(args.vect_address, args.vect_port,args.lang)
+            ft = VectorizerConnector(args.vect_address, args.vect_port)
             
             if "train" in trainData and "examples" in trainData["train"]:
                 idt = IntDetTrainer(ft, modelName, trainData["train"]["examples"], action)
