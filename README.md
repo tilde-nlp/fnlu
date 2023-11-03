@@ -16,9 +16,9 @@ Directory [VectorizerServiceSonar](VectorizerServiceSonar) contains container co
 
 Directory [IntentDetector](IntentDetector) contains container code for the intent detector.
 
-### Rasa
+### rasa
 
-Directory [Rasa](Rasa) contains example Rasa bot project with custom intent detector trained/accessed through the Web Service.
+Directory [rasa](rasa) contains example Rasa bot project with custom intent detector trained/accessed through the Web Service.
 
 ### Other
 
