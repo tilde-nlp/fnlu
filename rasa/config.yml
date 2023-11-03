@@ -1,0 +1,23 @@
+# The config recipe.
+# https://rasa.com/docs/rasa/model-configuration/
+recipe: default.v1
+
+# The assistant project unique identifier
+assistant_id: 20230828-143302-bipartite-jumper
+
+language: et
+
+pipeline:
+- name: "WhitespaceTokenizer"
+  intent_tokenization_flag: False
+- name: RegexFeaturizer
+- name: LexicalSyntacticFeaturizer
+- name: CustomIntentDetector.FederatedIntentDetector
+  intdeturl: http://tlddaigad:22220
+  modelname: "rahvusraamatukogu"
+
+policies:
+- name: RulePolicy
+  nlu_threshold: 0.4
+  core_threshold: 0.4
+  fallback_action_name: 'action_default_fallback'

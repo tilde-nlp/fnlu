@@ -1,0 +1,183 @@
+version: "3.1"
+
+rules:
+
+- rule: '1'
+  steps:
+  - intent: ajalehed_ajakirjad
+  - action: utter_ajalehed_ajakirjad
+  
+- rule: '2'
+  steps:
+  - intent: ametlik_teave
+  - action: utter_ametlik_teave
+  
+- rule: '3'
+  steps:
+  - intent: andmebaasid
+  - action: utter_andmebaasid
+  
+- rule: '4'
+  steps:
+  - intent: arstlik_komisjon
+  - action: utter_arstlik_komisjon
+  
+- rule: '5'
+  steps:
+  - intent: arvutite_kasutamine
+  - action: utter_arvutite_kasutamine
+  
+- rule: '6'
+  steps:
+  - intent: austria_saksa_šveits
+  - action: utter_austria_saksa_šveits
+  
+- rule: '7'
+  steps:
+  - intent: autoriõigus
+  - action: utter_autoriõigus
+  
+- rule: '8'
+  steps:
+  - intent: digiretsept
+  - action: utter_digiretsept
+  
+- rule: '9'
+  steps:
+  - intent: e-kataloog_ester
+  - action: utter_e-kataloog_ester
+  
+- rule: '10'
+  steps:
+  - intent: euroopa_liit
+  - action: utter_euroopa_liit
+  
+- rule: '11'
+  steps:
+  - intent: filmiteave
+  - action: utter_filmiteave
+  
+- rule: '12'
+  steps:
+  - intent: hambaravi
+  - action: utter_hambaravi
+  
+- rule: '13'
+  steps:
+  - intent: infopäring
+  - action: utter_infopäring
+  
+- rule: '14'
+  steps:
+  - intent: kartograafiateave
+  - action: utter_kartograafiateave
+  
+- rule: '15'
+  steps:
+  - intent: kirjastajaportaal
+  - action: utter_kirjastajaportaal
+  
+- rule: '16'
+  steps:
+  - intent: kopeerimine
+  - action: utter_kopeerimine
+  
+- rule: '17'
+  steps:
+  - intent: kunstiteave
+  - action: utter_kunstiteave
+  
+- rule: '18'
+  steps:
+  - intent: lahtiolekuaeg
+  - action: utter_lahtiolekuaeg
+  
+- rule: '19'
+  steps:
+  - intent: lugejaarvutid
+  - action: utter_lugejaarvutid
+  
+- rule: '20'
+  steps:
+  - intent: lugejaks_registreerimine
+  - action: utter_lugejaks_registreerimine
+  
+- rule: '21'
+  steps:
+  - intent: muusikateave
+  - action: utter_muusikateave
+  
+- rule: '22'
+  steps:
+  - intent: näitused
+  - action: utter_näitused
+  
+- rule: '23'
+  steps:
+  - intent: õigusinfo
+  - action: utter_õigusinfo
+  
+- rule: '24'
+  steps:
+  - intent: perearstiabi
+  - action: utter_perearstiabi
+  
+- rule: '25'
+  steps:
+  - intent: printimine
+  - action: utter_printimine
+  
+- rule: '26'
+  steps:
+  - intent: raamatulaenutus
+  - action: utter_raamatulaenutus
+  
+- rule: '27'
+  steps:
+  - intent: raamatuvarad
+  - action: utter_raamatuvarad
+  
+- rule: '28'
+  steps:
+  - intent: rekonstrueerimine
+  - action: utter_rekonstrueerimine
+  
+- rule: '29'
+  steps:
+  - intent: rr_juhtimine
+  - action: utter_rr_juhtimine
+  
+- rule: '30'
+  steps:
+  - intent: rr_kontaktid
+  - action: utter_rr_kontaktid
+  
+- rule: '31'
+  steps:
+  - intent: ruumibroneeringud
+  - action: utter_ruumibroneeringud
+  
+- rule: '32'
+  steps:
+  - intent: sisekord
+  - action: utter_sisekord
+  
+- rule: '33'
+  steps:
+  - intent: sõeluuringud
+  - action: utter_sõeluuringud
+  
+- rule: '34'
+  steps:
+  - intent: töövõimetushüvitis
+  - action: utter_töövõimetushüvitis
+  
+- rule: '35'
+  steps:
+  - intent: ühiskonnateadused
+  - action: utter_hiskonnateadused
+  
+- rule: '36'
+  steps:
+  - intent: wifi
+  - action: utter_wifi

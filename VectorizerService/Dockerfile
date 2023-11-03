@@ -9,3 +9,4 @@ COPY . /app
 ENV port="12345"
 
 ENTRYPOINT ["sh", "-c", "python src/VectorizerService.py --port ${port}"]
+#ENTRYPOINT ["sh", "-c", "python Test.py"]

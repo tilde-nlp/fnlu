@@ -2,15 +2,23 @@
 Software for Federated NLU; Project: EKTB78 Liitõppe rakendamise võimalused dialoogiandmete põhjal
 
 ## Content
-This repository contains 3 directories.
+This repository contains 4 directories.
 
 ### VectorizerService
 
-Directory [VectorizerService](VectorizerService) contains container code for the vectorizer.
+Directory [VectorizerService](VectorizerService) contains container code for the vectorizer based on LaBSE embedding model.
+
+### VectorizerServiceSonar
+
+Directory [VectorizerServiceSonar](VectorizerServiceSonar) contains container code for the vectorizer based on SONAR embedding model.
 
 ### IntentDetector
 
 Directory [IntentDetector](IntentDetector) contains container code for the intent detector.
+
+### Rasa
+
+Directory [Rasa](Rasa) contains example Rasa bot project with custom intent detector trained/accessed through the Web Service.
 
 ### Other
 

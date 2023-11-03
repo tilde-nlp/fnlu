@@ -1,0 +1,5 @@
+tornado==6.3.3
+torch==2.0.1
+fairseq2==0.1.1
+sonar-space==0.1.0
+memory_profiler

@@ -1,0 +1,1142 @@
+version: "3.1"
+
+nlu:
+- intent: ajalehed_ajakirjad
+  examples: |
+    - 1963.a Noorte Häält ei ole vist võimalik digiteerituna internetist leida?
+    - 25-30 juuli 1994 Postimehi, kas need on teil lugemissaalis saadaval?
+    - ajakirjad
+    - ajalehed
+    - Ajaleht
+    - ajalehte
+    - ajalehtede lisad on eraldi tellitavad?
+    - ajalehtede lugemiseks pean ennast lugejaks registreerima?
+    - ajalehtede lugemiseks pean ennast lugejaks registreerima?
+    - ajalehti
+    - ajalehti ka koju laenutada saab?
+    - digar
+    - digiteeritud
+    - kas ajalehed on kuskil lugemissaalis
+    - kas ajalehte Helsingin Sanomat laenutatakse koju
+    - Kas ajalehti ka koju laenutada saab?
+    - kas ajalehti saab
+    - kas kataloogist saab ajalehti ka otsida
+    - kas lugemissaalis saab arvutist lugeda värskeid ajalehti
+    - Kas ma Postimeest saan lugeda
+    - kas ma saan kodus ka ajalehti lugeda?
+    - Kas ma saan lugemissaalis arvutis lugeda värskeid ajalehti ja ajakirju?
+    - kas spordilehte
+    - kas teie juures on ka arhiiv kus saaks vanu ajalehti lugeda, Sakala 1987 aprill?
+    - Kas teil ajalehte MK-Estonia on?
+    - kas teil on ajakirja pööning
+    - Kas Teil on arhiiv kus on vanad ajalehed
+    - kas teil postimeest on
+    - Kas teil Soome ajalehti ka on?
+    - Kas teil vanu eestikeelseid filmiajakirju on?
+    - kuidas ma ajalehe leian
+    - Kuidas ma leian te majast Terviselehe?
+    - Kus aab lugeda paberkujul ajalehti?
+    - kus ma ajalehti lugeda saan
+    - Kus ma ajalehti lygeda saan
+    - kus ma saan õhtulehte lugeda
+    - kus ma värskeid ajalehti saan lugeda
+    - kus on teil ajalehed
+    - Kus saalis saab lugeda tänaseid ajalehti?
+    - Kus saalis saab lugeda värsket perioodikat
+    - kust leian teie juures ajakirjad
+    - kust leian teie juures ajalehed
+    - Kust ma leian vanu kunstiajakirju?
+    - milliseid võõrkeelseid ajakirju
+    - Milliseid võõrkeelseid ajakirju teil on?
+    - mis saalis saab lugeda ajlehti
+    - noorte häält
+    - õhtuleht
+    - päevalehe
+    - päevaleht
+    - päevalehte
+    - palu teil on võõrkeelseid ajakirju
+    - Palun abi ,kuidas ma leiaks Sakala ajalehe 1984 aasta artikleid ?
+    - Postimees
+    - Postimeest
+    - Rahvusraamatukogust on v]imalik tellida koha peal vaatamiseks ja paljundamiseks ajalehti, mille välja andmise kuupäev on 24.märts 1969?
+    - säilitate vanu ajakirju
+    - soovin 1990 august september Õhtulehe ja Nelli Teataja väljaannetega tutvuda
+    - Tere! Kas ma Juridicat saan ka teie juures lugeda?
+    - uusi ajalehti
+    - uute ajalehtede kohta
+    - vajan ajakirja täheke, kas teil on
+    - vana ajakirja
+    - vana ajalehe
+    - vanad ajalehed
+    - vanu kunstiajakirju?
+    - värskeid ajalehti
+    - võõrkeelsseid ajakirju
+- intent: ametlik_teave
+  examples: |
+    - Mis on dokument, mille alusel raamatukogu tööd korraldatakse
+    - mitu teavikut on raamatukogus?
+    - Rahvusraamatukogu ametlik lühend
+    - Rahvusraamatukogu ametlik nimetus
+    - Rahvusraamatukogu pangaarve
+    - Rahvusraamatukogu seadus
+- intent: andmebaasid
+  examples: |
+    - Index scriptorum estoniae, mis see on
+    - Kas digiraamatuid saab kõiki kodus laenutada
+    - Kas digiraamatuid saab laenutada
+    - Kas Eesti Rahvusbibliograafia andmekogus on kõik eestikeelsed raamatud?
+    - Kas Riigi Teataja on digiteeritud
+    - Kas Teil välismaa andmebaase ka on
+    - Kas telefoniraamatud on digiteeritud
+    - Kuhu te olete kokku kogunud kõik digiteeritud raamatud?
+    - Kus asuvad digiteeritud ajakirjad
+    - Kus asuvad digiteeritud raamatud
+    - Kus ma leian raamatukogusõnastiku
+    - Kus on raamatute e-kataloog
+    - Kust ma leiad digiteeritud kaarti
+    - Kust ma leian raamatukogusõnastiku
+    - Mida tähendab e-kataloog
+    - Mis on BIE
+    - Mis on digar
+    - Mis on digari eesti artiklid
+    - Mis on Eesti veebiarhiiv
+    - Mis on ERB
+    - Mis on ester
+    - Mis on ISE
+    - Mis on otsinguportaal
+    - Otsin seda andmebaasi, kus saab ajalehtede (ajakirjade, ajalehe, ajakirja) artileid (ajaleheartikleid) lugeda
+    - Soovin leida digiplakatit
+    - Soovin leida digiteeritud ajakirja
+    - Soovin leida digiteeritud illustratsioone
+    - Soovin leida digiteeritud näitusekataloogi
+    - Soovin leida digiteeritud plakateid
+    - Soovin leida digiteeritud postkaarte
+    - Soovin leida digiteeritudtootekatalooge
+    - Soovin leida, kas on digiteeritud plakat
+    - vanemaid sõiduplaane
+- intent: arstlik_komisjon
+  examples: |
+    - Kuidas ma saan enda e-terviseandmeid avada?
+    - Kuidas ma saan oma komisjoni aega muuta?
+    - Kus arstlikud komisjonid asuvad?
+    - Millal mind arstlikku komisjoni kutsutakse?
+    - Millal mu arstlik komisjon toimub?
+    - Mis ma oma tööandjale ütlen, kui ma arstlikku komisjoni pean minema?
+- intent: arvutite_kasutamine
+  examples: |
+    - arvuti
+    - heips kas teil arvutimänge saab mägdia
+    - kas arvuti kasutamine maksab midagi
+    - kas ma võin kasutada arvutit, ma ei ole lugeja
+    - kas teil arvutimänge mängida saab?
+    - Kui kiire teie Wifi on ja kas teie arvutitest Witcher 3 saab mängida?
+    - läpaka
+    - läpakas
+    - ma võin kasutada arvuteid, ma ei ole lugeja
+    - oma läpaka võin raamatukokku kaasa võtta
+    - sülearvti
+    - sülearvuti
+    - sülearvutit
+    - sülearvutit laadida
+    - kas teil vabu arvuteid on?
+- intent: austria_saksa_šveits
+  examples: |
+    - kas kusagil saksakeelseid filme ka on
+    - Kas Šveitsi raamatuid saab koju laenutada?
+    - Kas teil Goethe instituudiga on ka kontakte
+    - Kas teil goethe instituudiga on kontakte
+    - Kas teil on saksakeelset kirjandust?
+    - Kas teil saksa filme ka on
+    - Kas teil saksakeelseid filme ka on
+    - keeleõpikuid
+    - Kus on kõige rohkem saksakeelset kirjandust
+    - Liechtensteini
+    - reisida austrias
+    - reisiinfot saksamaa
+    - Reisimine Austrias Saksamaal Šveitsis
+    - saksa filmid
+    - saksakeelne kirjandus
+    - saksakeelne lastekirjandus
+    - saksakeelset kirjandust
+    - saksakeelset lastekirjandust
+    - sveitsi kohta
+    - šveitsi kohta infot
+- intent: autoriõigus
+  examples: |
+    - Kas kõik plakatid on autorikaitse all
+    - Kuidas saab kasutada Digaris autorikaitse all olevaid plakateid
+    - Kuidas saab kasutada Digaris autorikaitse all olevaid raamatuid
+    - 'Mida tähendab: autoriõigusega kaitstud'
+    - Miks ma digaris raamatut lugeda ei saa
+    - Miks on Digaris raamatu juures luku märk
+    - Miks raamatule kehtib autoriõigus. Autor on surnud
+    - Millistel tingimustel saab kasutada Digaris autorikaitse all olevaid raamatuillustratsioonide originaale
+    - Mis alusel määratakse, et digaris on autoriõigus
+- intent: digiretsept
+  examples: |
+    - Kas arst saab digiretsepti asemel paberretsepti väljastada?
+    - Kas Eesti digiretseptiga saab ravimeid osta teistes Euroopa Liidu riikides?
+    - Kas ja kuidas on võimalik välja osta teisele inimesele digiretseptiga ravimeid?
+    - Kas Soome retseptiga saab Eestist ravimeid osta?
+    - Kui kaua kehtib digiretsept?
+    - Kuidas pikendada retsepti?
+    - Kuidas saab ravimeid osta, kui digiretsepti süsteem ei tööta?
+    - Kus on võimalik näha oma retsepte?
+    - Mida teha, kui soodusravim on müüdud vale soodustusega?
+- intent: e-kataloog_ester
+  examples: |
+    - laenata raamatut
+    - aenata raamatut
+    - aga ilukirjandust
+    - Aga kust ma saan infot raamatute kohta?
+    - Aga raamatute kohta?
+    - digiteeritud kujul Lydia Koidula 1924,a, välja antud luulekogu
+    - eestiaegseid raamatuid
+    - Ester
+    - estrit
+    - füüsika ülesannete kogu põhikoolile
+    - Halduskohtumenetluse seadustik. Kommenteeritud väljaanne
+    - infot raamatute kohta
+    - Inglisekeelseid raamatuid
+    - Kas Eduard Vildest on midagi
+    - Kas Eesti Raamatukogudel on ühine andmebaas?
+    - kas kõik raamatukogus olevad raamatud leiab otsinguportaalist?
+    - kas ma saan kataloogis oma otsingud salvestada?
+    - Kas ma saan kodus lugeda Eduard Vilde Mäeküla piimameest?
+    - Kas Mäeküla piimameest saab laenata
+    - Kas magistritöid saab ka otsida ja leida?
+    - Kas mõnda raamatut robotitest tead?
+    - Kas on mingeid raamatuid Enn Põldroosi kohta
+    - Kas on olemas tõde ja õigus vene keeles.
+    - Kas on olemas eesti keele seletavat sõnaraamatut digitaalsel kujul?
+    - Kas on olemas raamatuid ravimtaimede kohta.
+    - Kas on sellist raamatut
+    - kas raamat sipsik on saadaval?
+    - kas raamatukogus on ladinakeelseid piibleid?
+    - Kas raamatukogus on prantsuskeelseid entsüklopeediaid
+    - Kas raamatukogus on prantsuskeelseid kokaraamatuid?
+    - Kas raamatukogus on prantsuskeelseid raamatuid?
+    - Kas raamatukogus on raamat nimega Eia seiklused tondikakul?
+    - kas rahvusraamatukogu ajaloost on raamatut?
+    - Kas sa oskad mulle mõnda raamatut soovitada?
+    - Kas saan raamatu ette tellida?
+    - kas saan teilt tellida e-raamatut?
+    - kas selliseid raamatuid on - Kevade ja Tootsi pulm
+    - Kas selliseid sarnaseid raamatuid on rohkem? Jean Effel Aadama ja Eeva armastus
+    - Kas teil A.H. Tammsaaret on kataloogis?
+    - Kas teil kohustuslikku kirjandust on.
+    - Kas teil näidendeid ka on?
+    - kas teil naksitralle on
+    - Kas teil on Eduard Vilde Mäeküla piimameest?
+    - Kas teil on ka e-raamatuid?
+    - Kas teil on kalle blomkvist
+    - Kas teil on ladinakeelset kirjandust?
+    - Kas teil on raamatuid ladina keeles
+    - kas teil on raamatut
+    - Kas teil on raamatut Kalevipoeg ?
+    - kas teil on raamatut Piibel
+    - kas teil on siin laos ANATOLI NEKRASSOVI ja NEALE DONALD WALSHI raamatuid
+    - kas teil pipi raamatut on?
+    - Kas teil Tammsaaret kah kogus on?
+    - Kas teil tragöödiaid ka on?
+    - kas teil urmas vadi uut raamatut on?
+    - Kas teistest saalidest ei leia e-raamatuid?
+    - Kas Vahingu raamatut oleks võimalik koju tellida?
+    - Kas Vahingu raamatut oleks võimalik koju tellida?
+    - katalaoogi ka kasutada
+    - kataloogi kasutada saab
+    - Kausta loomine estris
+    - kes on autor raamatul Külmale maale
+    - Kes on Tuhkatriinu autor?
+    - kokaraamatuid
+    - kuidas kataloogi kasutada
+    - kuidas ma kataloogist
+    - Kuidas ma saaksin teada, mis raamat see on, kus oli juttu Pipi Pikksukast?
+    - Kuidas ma saan leida vajaliku raamatu?
+    - kuidas otsida raamatut
+    - kuidas teie kataloogi kasutada saab
+    - Kus leida kirjadust pseudoteaduste kohta?
+    - Kus ma võiksin leida raamatu Kevade?
+    - Kust ma leian raamatute asukohad?
+    - KUST MA NÄEN OMA VARASEMAID LAENUTUSI
+    - kust ma näen oma varasemaid laenutusi?
+    - Kust ma võiksin leida Ferrari Madame de Shanghai?
+    - Ladinakeelseid raamatuid
+    - laenata raamatut
+    - laenutada raamatut Mardileib.
+    - laenutada raamatut Mardileib. Kas saan selle ette tellida?
+    - lydia koidula
+    - magistritöid
+    - magistritöid saab otsida
+    - Miks ma ei näe varasemaid laenutusi
+    - Milliseid eestikeelseid raamatuid teil on?
+    - Millisest andmebaasist leian ma eesti keelset kirjandust
+    - Millisest andmebaasist leian ma eesti keelset kirjandust
+    - Mind huvitavad aadressiraamatud?
+    - Mind huvitavad aadressraamatud?
+    - Mind huvitavad kalendrid?
+    - Mind huvitavad telefoniraamatud?
+    - minu varasemad laenutused on mulle ka kuskil näha?
+    - Mis on Vladimir Pooli raamatu pealkiri
+    - Mis raamat jutustab Sipsikust?
+    - mis raamatuid teil on
+    - Mul oleks vaja Bernard Comrie raamatut Aspect, aga ma ei näe sellele kohaviidet.
+    - niisama kataloogi tahan
+    - Nooti vaja
+    - On see raamat rahvusraamatukogus olemas ja laenutatav?
+    - oovita mulle midagi lugeda!
+    - Oskar Luts
+    - Otsin ajakirja
+    - otsin heliplaati
+    - otsin kataloogist
+    - otsin nooti
+    - otsin raamatuid
+    - otsin raamatut
+    - Otsin raamatut isa Gorjoo. Ei leia kuidai. Autor on Balsak vist
+    - Otsin raamatut..
+    - otsin videot
+    - otsingute salvestamine
+    - Palun soovita mulle head raamatut.
+    - Palun soovita mulle midagi lugeda!
+    - Pean töö otstarbel tutvuma raamatutega, mis ilmusid 19. sajandi keskel
+    - pipi piksuka raamatut
+    - prantsuse keelseid raamatuid teil on?
+    - Prantsusekeelset ilukirjandust
+    - Prantuse ilukirjandust
+    - raamatu otsing
+    - raamatuid
+    - Raamatuid leida
+    - raamatuid otsida
+    - Raamatuid otsida
+    - Raamatukataloogi
+    - raamatukogu kataloogi ka kasutada
+    - Raamatute otsimise kataloog
+    - Raamatute otsimise sait
+    - Saksakeelseid teatmikke
+    - 'Sooviks tellida: Maimu Berg Meie hingede võlad Hea Lugu, 2018'
+    - Sooviksin saada kirjandust astroloogia kohta?
+    - soovin raamatuid tehisintellektist
+    - Soovita lugemiseks mõni hea raamat
+    - Sügisroim
+    - tahan laenuatda raamatut
+    - tahan lugeda raamatut
+    - Tahan lugeda raamatut
+    - tahan Rammatuid?
+    - vanu raamatuid
+    - varasemaid laenutusi
+    - Võõrkeelseid raamatuid
+    - võõrkeelset kirjandust
+- intent: euroopa_liit
+  examples: |
+    - Andmeid Euroopa Liidus ametnike kohta
+    - Andmeid Europarlamendi saadikute kohat
+    - Breksitist midagi
+    - Brexiti läbirääkimiste käik
+    - Brexitist midagi
+    - Brüsseli konventsioon
+    - EL ja SBR viimasel ajal
+    - Eli naabruspoliitikast
+    - Euroopa Investeerimispank
+    - Euroopa Keskpank
+    - Euroopa komisjonid
+    - Euroopa komisjonide kohta
+    - Euroopa Kontrollikoda
+    - Euroopa Lidu lipp
+    - Euroopa Liidu covid 19 programm
+    - Euroopa Liidu eelarve
+    - Euroopa Liidu hümn
+    - Euroopa Liidu kohtuotsused
+    - Euroopa Liidu kohtupraktika
+    - Euroopa Liidu kohus
+    - Euroopa Liidu koroona dokumendid
+    - Euroopa Liidu liikmesriigid
+    - Euroopa Liidu Majandus ja Statistikakomitee
+    - Euroopa Liidu Nõukogu, millega tegeleb
+    - Euroopa Liidu põllumajandustoetused
+    - Euroopa Liidu seadused. Kust leian
+    - Euroopa Liidu Teataja
+    - Euroopa Liidu toetused
+    - Euroopa Liidu varjupaigapoliitika
+    - Euroopa Parlamendi istungid
+    - Euroopa Parlament, millega tegeleb
+    - Europarlamendi dokumendid
+    - Kes ja kuidas saab endale tellida Euroopa ravikindlustuskaarti või selle asendussertifikaati?
+    - Kui Eesti kodanik töötab teises Euroopa Liidu liikmesriigis, siis millises riigis saab ta ravikindlustuse ja kes väljastab Euroopa ravikindlustuskaardi?
+    - Kui Euroopa ravikindlustuskaart on kadunud, kuidas saab tellida uue?
+    - Kui kiiresti väljastatakse Euroopa ravikindlustuskaart või selle asendussertifikaat?
+    - Kuidas saab minna teise riiki plaanilisele ravile?
+    - Kuidas saab teises Euroopa Liidu liikmesriigis kindlustatud inimene Eestis arstiabi?
+    - Kuidas taotleda teises Euroopa Liidu liikmesriigis tehtud ravikulde eest tagasimakset?
+    - Kust leida raamatuid Euroopa Liidu digitaalse ühtse turu kohta?
+    - Kust leida raamatuid Euroopa Liidu idapartnerluse kohta?
+    - Kust leida raamatuid Euroopa Liidu laienemise kohta?
+    - Kust leida raamatuid Euroopa Liidu liikmesriikide kohta?
+    - Kust leida raamatuid Euroopa Liidu naabruspoliitika kohta?
+    - Lugano konventsioon
+    - Milliseid Euroopa Liidu E-vorme väljastab haigekassa?
+    - Mis on CORDIS
+    - Mis on Eur lex
+    - Mis on Eurovoc
+    - Mis on JURE baas
+    - Mis on N-lex
+    - Suurbritannia väljaastumine
+- intent: filmiteave
+  examples: |
+    - Animatsiooni kohta raamatuid
+    - Dokumentaalfilmidest ja nende loomisest kirjandust
+    - Feminism ja naisrežissöörid uurimistöö teemaks
+    - Filmi, mis räägib muistsest vabadusvõitlusest on?
+    - Filmimuusikast raamatuid ja artikleid oleks vaja
+    - Kas filme, kus Leonardo DiCaprio mängib, ka on?
+    - Kas on filmi-alaseid teatmeteoseid?
+    - Kas on kirjutatud Eesti teatrist saksa keeles?
+    - Kas on materjali filmi mõjust moekunstile
+    - Kas on materjali Jaapani filmi kohta?
+    - Kas seda filmi on?
+    - Kas teil lastefilme on?
+    - Kas teil multifilme on?
+    - Kas teil on filmiajaloo algusaegadest raamatuid?
+    - Kas teil on raamatuid Lähis –Ida filmikunstist?
+    - Kas teil on tummfilmiperioodist raamatuid?
+    - Kas teil telelavastusi on?
+    - Kas teil Woody Alleni filme on?
+    - Kas välismaa filme ka on?
+    - Kus filmi vaadata saaks?
+    - Kus on filmi-alased teatmeteosed?
+    - Kus on kirjutatud New Wave’ist?
+    - Kust leian filmiteooria raamatuid?
+    - Läti filmikunsti kohta raamatuid, kas on?
+    - Materjali töö jaoks filmifestivalide turundamisest
+    - Milliseid filme teil on?
+    - Mind huvitab eesti filmi ajalugu
+    - Otsin filmimise ja produtseerimise kohta raamatuid
+    - Otsin, vajan infot vanade filmiajakirjade kohta
+    - Tahaksin lugeda filmitsensuurist Eestis
+    - Tahan lugeda filmitsensuuri kohta
+    - Vajan animatsiooni kohta materjale
+    - Vajan stsenograafia kohta materjali
+    - Vanad eestikeelsed filmiajakirjad
+- intent: hambaravi
+  examples: |
+    - Kas lastel on hambaravi tasuta?
+    - Kas proteesihüvitise alla kuulub ka implantaadi panemine?
+    - Kellel ja kuidas on võimalik kasutada hambaravi -ja proteesihüvitist?
+    - Kellel on õigus tasuta ortodontiateenusele?
+    - Kuidas arvestatakse hambaravihüvitist?
+    - Kuidas saab kontrollida hambaravi -ja proteesihüvitise limiiti?
+    - Mida teha, kui rasedal ei ole hambaravi limiit suurenenud?
+    - Millised teenused kuuluvad hambaravihüvitise alla?
+    - Mis tähendab mitterahaline hambaravihüvitis?
+    - Mis tähendab suurenenud hambaravivajadusega isik?
+- intent: infopäring
+  examples: |
+    - kas emil tode on
+    - Kas helistades või meili teel saab kinni panna saab?
+    - Kas illustratsioone võib taaskasutada Digaris
+    - Kas originaalkunsti saab laenutada näitustele
+    - Kas originaalkunstist tohib teha koopiaid
+    - Kas saab kasutada illustratsioone uue väljaande trükkimiseks
+    - Kellele kuulub originaalkunsti autoriõigus?
+    - 'Kes on raamatu Piiririik autor: Emil Tode või Tõnu Õnnepalu'
+    - Kuidas on raamatu surm Siberis originaali pealkiri
+    - Mis aastal ilmus Lydia Koidula kõige esimene raamat?
+    - Soovin leida infot metsakasvatusest
+- intent: kartograafiateave
+  examples: |
+    - Ei leia maa-ameti kaarte
+    - Kaartide leppemärgid
+    - Kaartide leppemärkide seletused
+    - Kas demograafiaatlaseid leidub
+    - Kas demograafiakaarte ka on
+    - Kas kaardid on digiteeritud
+    - Kas kaarte saab digiteerida lasta
+    - Kas kontuurkaarte ka on
+    - Kas lindude rändekaarte on ka
+    - Kas on kaarte, kus näidatud, kus sureb kõige rohkem inimesi
+    - Kas on taimestikukaarte
+    - Kas saab näha kaarte, mis nõuka ajal olid keelatud?
+    - Kas teeekaardid on ka
+    - Kas vanu kaarte on
+    - kirjandust geodeesiast
+    - Kirjandust geoinformaatikast
+    - Kirjandust inimgeograafiast
+    - kirjandust kartograafiast
+    - Kuidas google kaarte kasutada
+    - Kus ma saan ArcGISi kasutada?
+    - Kus ma saan ArcMapi kasutada?
+    - Kus maakaardid on
+    - Kust ma leian linnaplaane
+    - Merekaarte on
+    - Milline on kõige suurem kaart Eesti Rahvusraamatukogus
+    - Mis on geograafia alase teabe kontaktid
+    - Mul oleks vaja paar kohta kaardile lisada
+    - Oleks vaja teha ürituse toimumise kaart
+    - Otsin maanteekaarte
+    - Topograafilised kaardid
+    - Vaja atlaseid
+    - Vaja maakaarte
+- intent: kirjastajaportaal
+  examples: |
+    - Soovin luua Publisheri konto
+    - Andmete sisestamisel tekkis viga
+    - 'Ei saa Kirjastajaportaali sisse ID kaardi ega obiilIdga: mida teha?'
+    - Ei saa sisse loogida, tahan e-raamatule ISBN teha. Kas voite aidata? Raamatu
+    - Helisasin ja mulle lubati saata Kirjastajaportaaliga liitumise kutse, kuid ma ei ole seda saanud.
+    - ja ma ikka ei kinnitanud seda aktiveerimiskutset kirjastaja portaali
+    - Kas failide esitamisel piisab ainult sisufailist?
+    - Kas ISBN vöötkoodi võib trükkida ka raamatu tagakaane SISEküljele?
+    - Kas Kirjastajaportaali kasutajaks saaks registreeruda ilma kohustusliku Eesti Rahvusraamatukogu (lugejaks) registreerumiseta?
+    - Kas korra üles laetud faili on võimalik ka enne arhiveerimiseks saatmist kustutada/asendada (kui juhtus näiteks kogemata vale fail)?
+    - Kas ma pean kasutama Kirjastajaportaali ISBNi saamiseks?
+    - Kas me peame üles laadima kõik e-raamatud, ka siis kui raamatud erinevad vaid ISBNide poolest, sisud on samad ja paberväljaande sisu on juba üles laetud?
+    - Kas on mingi reegel, kus peab ISSN ajalehe esilehel paiknema?
+    - Kas põhiandmevälja/kirjeldust saab peale ISBN numbri tellimist veel täiendada, nt lisada sarja andmeid?
+    - kas trükikotta saadetud pdf on piisav üleslaetavaks failiks
+    - Kas üleantav fail peab olema tegelik pdf-trükifail (st selline, kus kõik visuaalne materjal on täiskavliteedis) või võib olla ka pildiliselt madalama resolutsiooniga pdf-fail?
+    - Kasutaja logib sisse ja ta suunatakse konto loomise lehele, kuigi konto on loodud.
+    - Kavatsen oma raamatu trükki anda, aga turustamiseks on vaja triipkoodi. Kuidas seda saab?
+    - Konto aktiveerimise link on aegunud. Mida pean tegema, et Kirjastajaportaali sisse saada?
+    - Konto on juba kirjastajaportaalis olemas, kuidas sellega liituda?
+    - Kuhu tuleb ISBN raamatul panna?
+    - Kui meie raamatutel on mitu tootjat, kes peab loovutama failid?
+    - Kui üritan ID-kaardiga siseneda, annab süsteem veateate.
+    - Kuidas esitada algmaterjali faile?
+    - Kuidas ma saan Eesti Rahvusraamtukogu lugejaks?
+    - Kuidas ma saan ISBNi?
+    - Kuidas märkida autoriõiguseid?
+    - Kuidas saada ilmuvale teaduskogumikule ISSN kood
+    - Kuidas saada triipkoodi?
+    - Kuidas taotleda ISBNi raamatule, mis jääb e-raamatuks, ja kas sellisele raamatule on vaja üldse ISBN-i?
+    - Kuidas väljaandeid portaalis tagantjärele vormistada, kui need seal ei kajastu?
+    - Kus ma saan vöötkoodi?
+    - kutse on aegunud
+    - Logisin Kirjastajaportaali sisse, miks ma esilehest kaugemale ei saa?
+    - Lõime kirjastaja konto ning saime e-postile kinnituse, et see on loodud ning link, mille kaudu saab kontot aktiveerida, kuid antud link ei toimi.
+    - Lõin omale konto ja hakkasin ka tegema ka kirjastaja kontot, kuid siis süsteem ütles, et meil on juba konto olemas
+    - Ma ei mäleta Kirjastajaportaali siselogimise kasutajatunnust ja
+    - ma ei näe Kirjastajaportaalis kohta, kuhu fail üles laadida?
+    - Ma olen e-resident. Palun ISBNi.
+    - Mida kujutavad täpsemalt endast ligipääsud ja nende piirangud? Näiteks mis vahe on utoriseeritud töökohal ja RR arvutitel?
+    - Mida teha, kui kirjastusel ei ole võimalik loovutada trükise algmaterjali faile?
+    - Miks ma ei saa sisse logida Kirjastajaportaali?
+    - Millega ma saan sisse logida Kirjastajaportaali?
+    - Mis asi on EAN?
+    - Mis asi on ISBN?
+    - Mis on ISMN?
+    - Mis on trükise algmaterjal?
+    - mul on küsimus raamatu kohta millele tehakse kordustrükk et kuidas selle peaks märkima raamatusse ära kas lihtsalt Kordustrükk
+    - sain konto aktiveerimise lingi, aga see link ei tööta
+    - Sooviks siseneda kirjastaja portaali, aga ei mäleta enam ei kasutaja nime, ei parooli.
+    - Soovin infot, kes tavaliselt taotleb ISBN numbri, kas kirjastus või raamatu autor?
+    - Soovin saada ftp parooli - olen selle unustanud - tahan tõsta perioodika faile
+    - Tahtsin küsida, et kuidas saab ISBN-e raamatutele, millel pole teksti (pildiraamatud, värviraamatud vms)?
+    - 'Tahtsin portaalis asutusele kontot luua, aga tuli veateade: see nimi on juba kasutusel'
+    - Taotlesin ISBN koodi raamatule kuid pole saanud mitu päeva Teilt mingit tagasisidet.
+    - teie kasutajaga ei ole seotud ühtegi kontot
+    - Tekkis küsimus, et kuidas me saame kirjastajaportaali lisada jätkväljaannete faile?
+    - Sain raamatule ISBN koodi, aga kuidas saada triipkood?
+- intent: kopeerimine
+  examples: |
+    - Kas digitaalkoopiaid saab ka tellida
+    - Kas digitaalsel kujul saab ka kopeerida.
+    - Kas kahepoolseid koopiaid ka teete
+    - Kas kogu raamatust saab koopiat teha
+    - Kas kogu raamatut tohib kopeerida
+    - Kas kopeerida saab ise või mulle tehakse
+    - Kas kopeerimine on tasuline
+    - Kas ma ise ka koopiaid teha saan.
+    - Kas ma saan suurendatud koopiaid Digarist leitud vanadest postkaartidest
+    - Kas mulle tehakse koopiaid
+    - Kas niiviisi saab koopiaid teha, et tekst on mõlemal lehe poolel?
+    - Kas raamatukogus saab teha värvikoopiaid
+    - Kas raamatukogus tehakse koopiaid, nii et tekst on kopeeritud lehe mõlemale poolele.
+    - Kas te niisuguseid koopiaid teete, mida ma saan jätta oma usb pulgale
+    - Kas teil koopiaid teha ka saab.
+    - Kui palju maksab koopiate tegemine.
+    - Kui suuri koopiaid saab Eesti Rahvusraamatukogus üldse teha
+    - Kus kohas teil koopiaid tehakse
+    - Mis on koopiate valmistamise hind
+    - Olen kuulnud, et teil on selline masin, mis ise paljundab raamatust lehekülgi
+    - Olen kuulnud, et teil on selline masin, mis teeb ise koopiaid
+    - Tahan teha koopiaid
+- intent: kunstiteave
+  examples: |
+    - Kas kunstisaalis tohib omavahel vestelda?
+    - Kas siin raamatukogus on akvarellide reproduktsioone
+    - Kas siin raamatukogus on eksliibriseid
+    - Kas siin raamatukogus on fotoalbumeid
+    - Kas siin raamatukogus on originaalgraafikat
+    - Kas siin raamatukogus on plakateid
+    - Kas siin raamatukogus on postkaarte
+    - Kas siin raamatukogus on raamatuillustratsioone
+    - Kas siin raamatukogus on vanu postkaarte
+    - Kas teil on portreed
+    - Kus asub joonistamise
+    - Kus asub kirjandus arhitektuuri kohta
+    - Kus asub kirjandus disaini kohta
+    - Kus asub kirjandus eesti kunsti kohta
+    - Kus asub kirjandus fotograafia kohta
+    - Kus asub kirjandus graafilise disaini
+    - Kus asub kirjandus kunsti kohta
+    - Kus asub kirjandus maalikunsti kohta
+    - Kus asub kirjandus moe kohta
+    - Kus asub kirjandus moekunsti kohta
+    - Kus asub kirjandus skulptuuri kohta
+    - Kus asub kirjandus värviõpetuse kohta
+    - Mul on vaja/kust ma leian artkleid moekunstist
+    - Soovin materjali uurimistööks Tallinna arhitektuurist
+- intent: lahtiolekuaeg
+  examples: |
+    - Kas homme on raamatukogu avatud?
+    - kas poole kaheksa paiku võib teie juurde tulla veel
+    - Kas raamatukogu on pühapäeval avatud?
+    - Kas te laupäeval ja pühapäeval ka töötate
+    - Kas teil on homme ka lühem tööpäev
+    - Kui ma tulen kell seitse, kas ma saan siis veel raamatut laenutada
+    - Kuidas on Eesti Rahvusraamatukogu avatud laupäeval ja pühapäeval
+    - Kuidas teil need tööajad sätitud on
+    - Millal Eesti Rahvusraamatukogu nädalavahetusel avatud
+    - Millal Eesti Rahvusraamatukogu on avatud
+    - Millal Eesti Rahvusraamatukogu on kinni
+    - Millal Eesti Rahvusraamatukogu on pühade ajal suletud
+    - Millal Eesti Rahvusraamatukogu on suletud
+    - Millal Eesti Rahvusraamatukogu on suvel avatud
+    - Millal Eesti Rahvusraamatukogu pühade ajal on avatud
+    - Millal Kaitseressursside Amet avatud on?
+    - MIllal on Eesti Rahvusraamatukogu avatud
+    - Millal on Eesti Rahvusraamatukogu kollektiivpuhkuseks suletud
+    - Millal on rmtk avatud
+    - Millal on rmtk suletud
+    - Millal te kinni olete
+    - Millal te kollektiivpuhkusel olete
+    - Millal te laupäeval avatud olete
+    - Mis kell raamatukogu suletakse
+    - Mis kell raamatukogu sulgetakse
+    - Mis kell te sulgete täna?
+    - Tahan tulla raamatukokku pühapäeval, mis kellast kellani Te avatud olete?
+- intent: lugejaarvutid
+  examples: |
+    - Kas ma saan raamatukogus koostada arvutis ühe töö ja selle siis oma postkasti saata
+    - 5. korrusel asub ka arvuteid, mida inimesed saaksid kasutada
+    - aga arvuteid kasutada
+    - arvuteid saab kasutada
+    - arvuti kasutamine maksab midagi?
+    - arvuti kasutamine on tasuta
+    - arvuti kasutamiseks tuleb end järjekorda panna?
+    - arvuti kasutamiseks tuleb registreerida
+    - arvuti tasuta
+    - arvutid on varustatud id kaardi lugeriga?
+    - arvutid on varustatud kõlaritega?
+    - arvutiinterneti teenus
+    - arvutis soovin wordi
+    - arvutit saab kasutada
+    - arvutitele ligipääs
+    - arvutites muusikat saab kuulata?
+    - arvutites on kontoritarkvara installitud?
+    - enda isiklik kaasavõetud mälukaart on võimalik arvutiga ühendada .
+    - excelit
+    - excelitabeleid
+    - flopi
+    - flopiketas
+    - harulduste saalis saab arvutit kasutada?
+    - kas arvuti tasuta
+    - kas arvuti tuleks enne broneerida?
+    - Kas arvutite kasutamine on tasuline?
+    - kas arvutite kasutamisel on ajaline piirang?
+    - kas arvutitel on vene klaviatuur?
+    - kas arvutites on heliväljund
+    - kas arvutites on heliväljund?
+    - kas arvutites on võimalik idkaarti kasutada?
+    - Kas Eesti Rahvusraamatukogus arvuteid saab kasutada
+    - Kas Eesti Rahvusraamatukogus arvutite kasutamine on tasuta
+    - Kas enda isiklik kaasavõetud mälukaart on võimalik arvutiga ühendada .
+    - Kas ma id-kaarti saan kasutada?
+    - Kas ma saan anda teie raamatukogus digiallkirja
+    - Kas ma saan avada rmtk arvutis dokumenti, milleks on vaja id-kaarti
+    - Kas ma saan Eesti Rahvusraamatukogus  dekrüpteerida dokumenti
+    - Kas ma saan Eesti Rahvusraamatukogus lugeda digiallkirjastatud dokumenti
+    - Kas ma saan Eesti Rahvusraamatukogus lugeda krüteeritudtud dokumenti
+    - Kas ma saan raamatukogus koostada arvutis ühe töö ja selle siis oma eposti saata
+    - Kas ma saan raamatukogus koostada arvutis ühe töö ja selle siis paberil välja lasta
+    - Kas ma saan raamatukogus koostada arvutis ühe töö ja selle siis oma emailile saata
+    - Kas ma saan raamatukogus koostada arvutis ühe töö ja selle siis välja printida
+    - Kas ma saan raamatukogus koostada arvutis ühetöö ja selle siis välja trükkida
+    - Kas printimine on tasuline teenus
+    - Kas printimise võimalus on Teil olemas
+    - Kas saan oma teie arvutis tehtud uurimistöö endale e-mailile saata?
+    - Kas saan raamatukogu arvutisse tulla koolitöid tegema?
+    - Kas teie arvutis on ka mikrofon?
+    - kas teie arvutitega saab ka kasutada Excel tabeleid ?
+    - Kas teie juures CD peale kirjutada?
+    - Kas teie juures DVD peale kirjutada?
+    - Kas teie lugejaarvutitel on ka id-kaardi lugerid
+    - kas teil on võimalus arvutit kasutada?
+    - kas teil vabu arvuteid on
+    - kas töökohaarvutites on kontoritarkvara installitud
+    - Kas värviliselt saab ka printida
+    - kas wordi saab kuskil kasutada
+    - kaua saan korraga arvutit kasutada?
+    - Kui kaua ma tohin kasutada Rahvusraamatukogu arvutit
+    - Kui mul oleks vaja üks dokument arvutist printida, kas see on Eesti Rahvusraamatukogus võimalik.
+    - Kui palju ma tohin printida
+    - kus asuvad avalikud arvutid
+    - kus saab kasutada autoriseeritud töökohti?
+    - mälupulgalt printida
+    - Millistes saalides on lugejaarvutid?
+    - Mis maksab arvutite kasutamine?
+    - mis op-süsteem teie arvutites on?
+    - mitu arvutitöökohta on lugemissaalis?
+    - mitu arvutitöökohta on lugemissaalis?
+    - mul on flopiketas
+    - Mul on küsimus arvutite kasutamise kohta
+    - mul on vana flopiketas, kas ma saan teie arvutis
+    - Mul on vana flopiketas, kas saaksin selle teie arvutis lahti?
+    - powerpoint
+    - powerpointi
+    - saan arvuti ette broneerida?
+    - saan seadistada teie arvuti nii, et saan kasutada hiirt parema käega?
+    - saan teie juures CD peale kirjutada?
+    - saan teie juures DVD peale kirjutada?
+    - tasuta interneti kasutamine?
+    - Teil arvutites kaamera on?
+    - tere kas teil vabu arvuteid on
+    - Tere, kas teil vabu arvuteid on?
+    - töökohaarvutites on kontoritarkvara installitud?
+    - wordi kasutada
+- intent: lugejaks_registreerimine
+  examples: |
+    - ajalehtede lugemiseks on vaja lugejapiletit?
+    - Kahjuks ma ei ela Eestis, aga sooviksin hakata Teie raamatukogus lugemas käima.
+    - Kas e-residendid saavad RR lugejateks?
+    - Kas igaüks võib olla Eesti Rahvusraamatukogu lugeja
+    - Kas juhiloaga saab ka end lugejaks registreerida
+    - Kas keskraamatukogu lugejakaardiga saab Rahvusraamatukogust laenutada raamatuid
+    - Kas lugejaks saab hakata ka siis, kui mul on kaasas ainult juhiluba
+    - Kas õpilaspilet kõlbab lugejaks registreerimiseks
+    - Kas õpilaspileti alusel saab vormistada raamatukogu kasutusõiguse?
+    - Kas üliõpilaspiletiga saab laenutada raamatuid?
+    - Kui vana peab olema, et Eesti Rahvusraamatukogu kasutajaks registreerida
+    - Kui vana peab olema, et Eesti Rahvusraamatukogu kasutajaks vormistada
+    - Kui vana peab olema, et Eesti Rahvusraamatukogulugejaks vormistada
+    - Kui vana peab olema, et teie rmtk lugejaks registreerida
+    - Kuidas ma saan hakata teie raamatukogu kasutama?
+    - Kuidas ma saan vormistada end Eesti Rahvusraamatukogu lugejaks
+    - Kuidas ma saan vormistada ennast Eesti Rahvusraamatukogu kasutajaks
+    - Kuidas saab kasutajaks registreerida
+    - Kuidas saab lugejaks registreerida?
+    - Mida ma pean tegema, kui soovin Teie juures akata lugemas käima
+    - Mis mu salasõna on, et ruumi broneerida?
+    - Mul on Eesti elamisluba. Kas ma saan tulla Eesti rahvusraamatukokku.
+    - Olen välismaalane, mul ei ole Eesti id kaarti, kas ma saan ennast Eesti Rahvusraamatukogu asutajaks vormistada
+    - Tahan laenutada teilt raamatuid. Mida pean selleks tegema.
+- intent: muusikateave
+  examples: |
+    - Kas arhiivi plaate kuulata saab?
+    - Kas eesti rahvalaulude seadeid soolohääleleon?
+    - Kas erinevate rahvaste muusikat kuulamiseks ka on?
+    - Kas kergemuusika noote on
+    - Kas laulikud on teil kuskil väljas ka?
+    - Kas ma neid klaveripalu läbi mängida ka saan
+    - Kas maailma popstaaride plaate on
+    - Kas on ainult klassikalist muusikat
+    - Kas on eesti rahvalaulude seadeid
+    - Kas on eesti rahvalaulude seadeid barotonile
+    - Kas on eesti rahvalaulude seadeid bassile
+    - Kas on eesti rahvalaulude seadeid lastekoorile
+    - Kas on eesti rahvalaulude seadeid meeskoorile
+    - Kas on eesti rahvalaulude seadeid naiskoorile
+    - Kas on eesti rahvalaulude seadeid poistekoorile
+    - Kas on eesti rahvalaulude seadeid segakoorile
+    - Kas on eesti rahvalaulude seadeid sopranile
+    - Kas on eesti rahvalaulude seadeid tenorile
+    - Kas on eesti rahvalaulude seadeid vokaalansamblile
+    - Kas plaate saab kohapeal kuulata
+    - Kas plaate saab ümber salvestada
+    - Kas saksakeelseid muusikaajakirju ka on?
+    - Kas teil džässi ka on
+    - Kas teil erinevate maade muusika kohta on kirjandust?
+    - Kas teil erinevate maade muusika kohta on materjali
+    - Kas Teil jazzi ka on
+    - Kas teil muusikavideosid ka on?
+    - Kas teil on ainult klassikalise muusika noodid?
+    - Kas teil poppi ka on
+    - Kas teil poppi kergema muusika noote on
+    - Kas teil vinüüle ka on?
+    - Kas videosid koju laenutatakse/saab?
+    - Kuidas ma saan sellest noodist koopia?
+    - Kus arhiivi plaate kuulata saab?
+    - Kus asub kirjandus džässi kohta
+    - Kus asub kirjandus jatsu kohta
+    - Kus asub kirjandus jazzi kohta
+    - Kus asub kirjandus muusikaajaloo kohta
+    - Kus asub kirjandus muusikainstrumentide
+    - Kus asub kirjandus muusikapsühholoogia kohta
+    - Kus asub kirjandus muusikateooria kohta
+    - Kus asub kirjandus pärimusmuusika kohta
+    - Kus ma saaksin sellest laulust koopia teha?
+    - Kus neid siis vaadata saab?
+    - Kus on popmuusika raamatud?
+    - Kus teil muusikaentsüklopeediad on?
+    - Kus teil muusikateatmeteosed on
+    - Kus teil ooperite klaviirid on?
+    - Kus teil uuedviimati saabunud noodid on
+    - Kust ma võin leida Tubina 3. sümfoonia partituuri?
+    - Millised muusikaajakirjad teil käivad?
+    - Mul on vaja ühe laulu nooti.
+    - Mul on vaja ühe laulu sõnu.
+    - Sooviks rahvalaulude töötlusi mudilaskoorile
+    - Tahaksin selle teose partituuri ja helisalvestisega läbi töötada
+- intent: näitused
+  examples: |
+    - 25 kauneimat Eesti raamatut
+    - Eduard Wiiralti galeriii
+    - Eesti aumärgid
+    - Eesti ordenite näitus
+    - Info näituste kohta
+    - Infot näituste kohta
+    - Kes kuuluvad 25 kaunima raamatu žüriisse
+    - Kes on 25 kaunima raamatu auhinnakomisjonis
+    - Kes võib tuua raamatuid 25 kauneima raamatu konkursile
+    - Kuhu tuua 25 kauneima raamatud
+    - Kui kaua on näitus avatud
+    - Kus saab lugeda 25 kaunima eesti raamatu konkursi kohta
+    - Millal näitus avatakse
+    - Millal näitus suletakse
+    - Millal saab tagasi 25 kauneima raamatu väljapeneku raamatud
+    - Millal saab teada 25 kauima raamatukonkursi tulemused
+    - Millal saab tuua 25 kauneima konkursile raamatuid
+    - Näitus, kus saab näha vabadusristi
+    - Rahvusraamatukogu veebinäitused
+    - Teenetemärgid
+    - Teenetemärkide galerii
+    - Viiralti galerii
+    - Viiralti graafika
+    - Viiralti graafilised lehed
+    - Viiralti kunstikogu
+    - Viiralti sedöövrid
+    - Wiiralti graafika
+    - Wiiralti graafilised lehed
+    - Wiiralti kunstikogu
+    - Wiiralti šedöövrid
+- intent: õigusinfo
+  examples: |
+    - kus on asjaõiguse kommentaarid
+    - Kas on ilmunud õigusajakirjades teadusartikleid õiguse kohta?
+    - Kas saate saata seadust digiteeritult
+    - Kas Saksa õigusest midagi eesti keeles ka on?
+    - Kas teie raamatukogus on olemas Riigi Teataja?
+    - Kas teil on käskkirja näidista
+    - Kas teil on kodukora näidist
+    - Kas teil on kodukorda?
+    - Kas teil on mingi x lepingu põhikirja / põhja ?
+    - Kas teil on olemas ministeeriumi määrust?
+    - Kas teil on RiTo-t paberil ka?
+    - Kas teil saksakeelseid õigusajakirju ka on?
+    - kuidas ma teiste riikide seaduseid leian?
+    - Kuidas saada kätte Euroopa riikide seadusi?
+    - Kus on Soome seadused?
+    - kus on võlaõiguse kommentaarid
+    - Kust leida Riigikogu stenogramme?
+    - Kust leida tsivmenetluse kommentaare
+    - Kust leida Ülemnõukogu stenogramme?
+    - Kust ma leiaks põhiseaduse kommentaarid?
+    - kust ma leian võlaõiguse kommentaarid
+    - Kust otsida KarSi kommentaare
+    - Kust saab vanu Riigi Teatajaid?
+    - Ma sooviks inimõiguste deklaratsiooni lugeda, vene keeles
+    - Ma sooviks seda kõige viimast ehitusseadust
+    - Ma sooviks seda kõige viimast pärimisseadust
+    - Ma sooviks seda kõige viimast perekonnaseadust
+    - Ma tahaks midagi üldist rahvusvaheliste organisatsioonide kohta.
+    - Mind huvitaks midagi ÜRO rahuvalveoperatsioonide kohta.
+    - Mis on Summaria iuridica
+    - Mis tähendab leidke Riigi Teatajast algtekst?
+    - Mul on vaja kriminaalmenetluse kommentaare
+    - Mul on vaja krimmenetluse kommentaare
+    - Mul on vaja raamatuid Rooma õigusest
+    - Paluks neid 80ndate Riigi Teatajaid
+    - Palun, kas saate hankida mulle viidatud kohtuotsuse?
+    - PS kommenteeritud väljaannet
+    - Tahan teada Austria õigussüsteemi kohta
+    - Vajan TsÜSi (= tsiviilseadustiku üldosa seadus)
+- intent: perearstiabi
+  examples: |
+    - Kes kontrollib perearstide tööd?
+    - Kes on minu perearst?
+    - Kuidas leida ja vahetada perearsti?
+    - Kuidas vahetada perearsti?
+    - Kust ma leiab perearsti vahetamise avalduse?
+    - Milliselt aadressilt saab vaadata kes on minu perearst?
+- intent: printimine
+  examples: |
+    - kAS ma saan printida
+    - kas printida saab
+    - Kas teie juures saab trükkida kahepoolselt?
+    - kas teil saab printida
+    - Kas teil suuremat kui A3 formaati saab trükkida?
+    - Kas teil väriprinter ka on.
+    - Kui suurt formaati saan teie juures printida?
+    - kuidas printida
+    - Kus ma oma töö saan välja printida?
+    - Kus ma saan teil printida?
+    - mälupulgalt saab printida?
+    - mis seadmetega te prindite
+    - Mis seadmetega te prindite?
+    - Mul on dokument mälupulgal, kas see teie juures selle välja printida?
+    - printida
+    - printida ka saab
+    - printida teie juures
+    - printimine
+    - printimine on võimalik
+    - saan ka 100 lk-d rahvusraamatukogus välja printida?
+    - soovin printimise kohta küsida
+    - värviline printimine on kallim kui must-valge?
+    - värviliselt printida ja palju see maksab?
+- intent: raamatulaenutus
+  examples: |
+    - raamatut tellida
+    - Kas cd plaate laenutatakse koju
+    - Kas cd-sid laenutatakse koju
+    - Kas dvd-sid - saab koju laenutada.
+    - Kas Eesti Rahvusraamatukogust raamatuid koju saab laenutada
+    - Kas filme koju kaasa saab?
+    - Kas heliplaate laenutatakse koju
+    - Kas kaasa võtmiseks saab ka raamatuid laenutada
+    - Kas ma saan RVLi kaudu tellida artiklist digikoopia
+    - Kas ma saan tellida raamatu ka mõnest teisestTallinna raamatukogust
+    - Kas mikrofilme laenutatakse koju
+    - Kas raamatu tagastustähtaega saab muuta?
+    - Kas Rahvusraamatukogust noote saab laenata.
+    - Kas Rahvusraamatukogust saab ajakirju koju laenutada
+    - Kas Rahvusraamatukogust saab ajakirju laenutada
+    - Kas te ajakirja koju ka laenutate
+    - Kas te ajakirju ka laenutate
+    - Kas te filme ka kodus vaatamiseks laenutate
+    - Kas te noote ka laenutate?
+    - Kas Te teisest raamatukogust ajakirju ka tellite
+    - Kas Te teisest raamatukogust filme ka tellite
+    - Kas Te teisest raamatukogust mikrofilme ka tellite
+    - Kas Te teistest raamatukogudest ka raamatuid tellite.
+    - Kas teete raamatut kiirtellimusena ka?
+    - Kas Teie raamatukogus vanu ajalehti ka on.
+    - Kas Teil välismaa ajakirjandust ka lugeda saab
+    - Kas Teil välismaa ajalehti-ajakirju ka on?
+    - Kas teisest raamatukogust raamatu tellimine on tasuta / tasuline
+    - Kas teit on laenutuses Eric Ries Lean Startup.Inglise või eesti keeles.
+    - Kui kaua võtab raamatu / artikli saabumine aega, kui see on tellitud mõnest teisest raamatukogust
+    - Kui kauaks te raamatuid laenutate
+    - Kui ma olen alles 14, kas ma saan teilt raamatuid laenutada?
+    - Kui mind huvitav raamat on kellegi teise käes, kas ma saan ennast järjekorda panna
+    - Kui mind huvitav raamat on kellelegi juba laenatud, kas ma saan ennast järjekorda panna
+    - Kui palju maksab artikli tellimine teisest raamatkogust
+    - Kui palju maksab raamatu tellimine teisestraamatukogust
+    - Kuidas laenutada raamatut raamatukappi
+    - Kuidas ma saan ajalehti lugeda.
+    - Kuidas ma saan end raamatule järjekorda lisada
+    - Kuidas ma teada saan, kui raamat, mis mulle telliti teisest raamatukogust, on kohal
+    - Kuidas saab laenutada võrguteavikuid
+    - Kuidas saab raamatuid laenutada
+    - Kuidas tagastada raamatut Rahvusraamatukogule
+    - Kus kohast ma saan laenutada sipsikut?
+    - Mida peaksin tegema, kui mul on väga vaja raamatut, mida üheski raamatukogus ei ole
+    - Mida pean tegema, et laenutada raamatut
+    - Mida teha, kui raamatut / artiklit, ei leidu Rahvusraamatukogus
+    - Miks ma peaksin tellima raamatu teisest aamatukogust
+    - Millistel tingimustel saab laenutada värvimisraamatuid
+    - Millistel tingimustel saab laenutada ajakirju
+    - Millistel tingimustel saab laenutada ajalehti
+    - Millistel tingimustel saab laenutada cd-sid
+    - Millistel tingimustel saab laenutada dvad-sid
+    - Millistel tingimustel saab laenutada eksliibriseid
+    - Millistel tingimustel saab laenutada heliplaate
+    - Millistel tingimustel saab laenutada kalendreid
+    - Millistel tingimustel saab laenutada maakaarte
+    - Millistel tingimustel saab laenutada mängufilme
+    - Millistel tingimustel saab laenutada mikrofilme
+    - Millistel tingimustel saab laenutada noodikogumikke
+    - Millistel tingimustel saab laenutada noote
+    - Millistel tingimustel saab laenutada õppefilme
+    - Millistel tingimustel saab laenutada originaalgraafikat
+    - Millistel tingimustel saab laenutada partituure
+    - Millistel tingimustel saab laenutada plakateid
+    - Millistel tingimustel saab laenutada postkaarte
+    - Millistel tingimustel saab laenutada reklaame
+    - Millistel tingimustel saab laenutada teatmeteoseid
+    - Millistel tingimustel saab laenutada töövihikuid
+    - Millistel tingimustel saab laenutada valimisreklaame
+    - Millistel tingimustel saab laenutada vhs kassette
+    - Millistel tingimustel saab laenutada vinüüle
+    - Millistel tingimustel saab laenutada vinüülplaate
+    - Millistel tingimustel saab laenutada entsüklopeediaid
+    - Mis on raamatkogudevaheline laenutus
+    - Mis on RVL
+    - Mullistel tingimustel saab laenutada mikrofišše
+    - Olen unustanud raamatu tagasi tuua. Mida pean nüüd tegema
+    - Tahaks ühte raamatu laenutada
+    - Tahaks ühte raamatu tellida
+    - Tere soovin laenatada 2 raamatut
+- intent: raamatuvarad
+  examples: |
+    - Kui palju on raamatukogus raamatuid
+    - Kui palju on Rahvusraamatukogus kirjandust
+    - Kui palju on Rahvusraamatukogus raamatuid
+    - Kui palju on rahvusraamatukogus teavikuid
+    - Kui palju on RRis raamatuid
+- intent: rekonstrueerimine
+  examples: |
+    - Arhiiv Rahvusraamatukogu hoones
+    - Rahvusarhiiv Rahvusraamatukogus
+    - Rahvusraamatukogu hoone uuendamine
+    - Rahvusraamatukogu rekonstrueerimine
+    - Rahvusraamatukogu remondikava
+    - Rahvusraamatukogu remondiplaanid
+    - Rahvusraamatukogu renoveerimine
+    - Rahvusraamatukogu uuendamine
+    - RR hoone uuendamine
+    - RR rekonstrueerimine
+    - RR remondiaeg
+    - RR remondis
+    - RR renoveerimine
+    - RR restaureerimine
+    - Uus rahvusraamatukogu
+- intent: rr_juhtimine
+  examples: |
+    - Kes on asedirektor
+    - Kohtuda direktoriga
+    - Raamatukogu direktor
+    - Raamatukogu direktori kontaktid
+    - Rahvusraamatukogu nõukogu koosseis
+    - Rahvusraamatukogu peadirektor
+    - Vastuvõtule direktori juurde
+- intent: rr_kontaktid
+  examples: |
+    - Kes juhib RRi
+    - Kes tegeleb kommunikatsiooniga
+    - Kohtuda avalike suhete juhiga
+    - Kohtuda kommunikatsioonispetsialistiga
+    - Kontakti avalike suhete juhiga
+    - Millised osakonnad on Rahvusraamatukogus
+    - Pressipealiku juhi andmeid
+    - Rahvusraamatukogu juhtkond
+    - Rahvusraamatukogu juhtkonna kontaktid
+    - Rahvusraamatukogu osakonnad
+    - Rahvusraamatukogu töötajad
+- intent: ruumibroneeringud
+  examples: |
+    - Kas ruumide rendi eest saab tasuda kaardiga
+    - Kas sularahas tohib maksta klaveriruumi eest
+    - Kas videoruum on tasuline?
+    - Kas videoruumi kasutamine maksab?
+    - Kas videoruumi kasutamine on raha eest?
+    - Kas videoruumi saab broneerida
+    - Kas videoruumi saab ka üürida
+    - Kui kaua aega ette saab ruumi broneerida.
+    - Kui ma ei saa tulla, kas ma pean siis ikka maksma?
+    - Kui palju klaveriruum maksab?
+    - Kui suur on klaveri rent
+    - Kui suured on tööruumid
+    - Kuidas ruumi broneerida?
+    - Kuidas saab broneerida ruumi nii, et ei peaks maksma
+    - Miks tööruumid on nii väikesed
+    - Millal on ruumide broneerimine tasuline
+    - Mis maksab klaveriruumi üürimine
+    - Mis on nende rühmaruumide nimed, mis asuvad 7. korrusel.
+    - Mis see klaveriruumi kasutamine maksab?
+    - Mitu rühmaruumi Teil üldse on?
+    - Oleks vaja broneerida ruumi neljale inimesele
+- intent: sisekord
+  examples: |
+    - Kas Eesti Rahvusraamatukokku võib igaüks tulla
+    - Kas igaüks võib tulla Eesti Rahvusraamatukokku
+    - Kas igaüks võib tulla teie raamatukogusse
+    - Kas lapsed võivad tulla Eesti Rahvusraamatukogusse.
+    - Kas ma oma läpaka võin raamatukokku kaasa võtta
+    - Kas ma võin oma isikliku raamatuga raamatukogusse siseneda
+    - Kas ma võin tulla raamatukokku, kui mul on mu enda raamat kaasas
+    - Kas minu lapselapsed tohivad minuga raamatukokku kaasa tulla
+    - Kas minu pojapoeg võib minuga raamatukokku kaasa tulla
+    - Kas pean oma mantli andma riietehoidu
+    - Kas raamatukokku võib igaüks tulla
+    - Kas riided peab jätma gardekasse
+    - Kas sülearvutiga tohib siseneda
+    - Kas teie asutus on kõigile vabalt kasutada
+    - Kas üleriided peab tingimata jätma garderoobi
+    - Kui vanalt võib tulla Eesti Rahvusraamatukokku
+    - Kuidas ma pääsen Eesti Rahvusraamatukokku
+    - Liigun ratastooliga. Kas ma pääsen raamatukogusse?
+    - Ma ei ole teie lugeja, kuid tahaksin tulla teie raamatukokku vaatama ühte raamatut
+    - Mida ma pean tegema, et Eesti Rahvusraamatukokku tulla
+    - Mis dokumendid peavad kaasas olema, et tulla külastama Eesti Rahvusraamatukogu
+    - Kas ma võin oma kaheaastase poja kaasa võtta
+    - Kas ma võin oma kaheaastase tütre kaasa võtta
+    - Kas ma võin oma koera kaasa võtta 
+- intent: sõeluuringud
+  examples: |
+    - Keda kutsutakse sõeluuringule?
+    - Kuidas ma saan teada sõeluuringu tulemustest?
+    - Kuidas registreeruda sõeluuringule?
+    - Kust leiab sõeluuringu kontaktid?
+    - Milliseid sõeluuringuid haigekassa rahastab?
+- intent: töövõimetushüvitis
+  examples: |
+    - Kas FIE saab haigusraha?
+    - Kas mitmes töökohas töötades peab haiguslehele jääma kõigi tööandjate juurest?
+    - Kas palgatapuhkusel ravikindlustus kehtib?
+    - Kas puhkuse ajal saab haiguslehe?
+    - Kas töövõimetust makstakse kõigi nädalapäevade eest.
+    - Kas välisriigis väljastatud töövõimetuslehe alusel makstakse hüvitist?
+    - Kas vanaema võib haige lapsega kodus olla?
+    - Kui kiiresti makstakse töövõimetushüvitis välja?
+    - Kuidas esitada pangakonto andmeid töövõimetushüvitise maksmiseks?
+    - Kuidas saab töövõimetushüvitise andmeid muuta?
+    - Kustkohast saan infot haigusraha arvutuskäigu kohta?
+    - Mida teha, kui mulle on väljastatud välisriigi arsti poolt haigusleht?
+    - Millal töövõimetusleht aegub?
+    - Mitme päeva eest makstakse hooldushüvitist?
+    - Mitmendast päevast maksab haigekassa haigushüvitist?
+    - Selline küsimus et kui olen lapse ootel ja jään novembrist haiguslehele seoses kergema töö puudumise tõttu, kuidas makstakse hüvitist?
+    - Sooviks uurida enda haiguslehe summa kohta. Kas antud summa on õige?
+    - Sooviksin teada, kas uue lehe hüvitise maksmise korral jõustub ikka maksuvaba tulu, kui avaldus on esitatud 500€ maksuvaba tulu.
+    - kui kaua võtab aega rasedus-sünnituslehe hüvitise arvestamine ?
+- intent: ühiskonnateadused
+  examples: |
+    - Kas kusagilt saab leida 1920. aastate statistikat?
+    - Kas psühholoogia teste saab koju laenutada?
+    - Kas te oskate soovitada materjali statistiliste meetodite kohta?
+    - Kas teie saalis on infot sisserände kohta?
+    - Kas teie saalis on raamatuid migratsiooni kohta?
+    - Kas teil on soomekeelseid majandusraamatuid?
+    - Kuidas leida uuemaid ühiskonnauuringuid?
+    - Kuidas liituda parlamendiraamatukogu uudiskirja kasutajate listiga
+    - Kuidas saada parlamendiraamatukogu uudiskirja lugejaks
+    - Kus asub majandusteaduste saal
+    - Kus asuvad politoloogia raamatud
+    - Kust ma leian kodanikuõpetuse õpikuid?
+    - Mis on demokraatia definitsioon?
+    - Mis on demokraatia definitsioon?
+    - Mis on parlafon. Kuidas seda lugeda saab
+    - Mis on ühiskonnauuringud
+    - Mul on vaja statistikat. Kuhu peaksin minema
+    - Õpin infoteadusi. Kus teil asub sellealane kirjandus
+    - Otsin ajakirja Raamatukogu.
+    - Palun materjali Vene-Türgi suhete kohta
+    - raamatuid rahvusvaheliste suhete teooriatest
+    - uurimistööd teemal “Olmeprügi sorteerimine”
+    - Vaja teha töö teemal neuroturundus ja välisreklaamid
+- intent: wifi
+  examples: |
+    - kas teie wifi on turvaline?
+    - kas teil on tasuta internet
+    - kas teil on tasuta internet?
+    - kas teil on tasuta wifi
+    - kas teil on tasuta wifi?
+    - kas teil on tasuta wi-fi?
+    - kas teil wifi on
+    - kas teil wifi töötab? mai saa sisse
+    - Kui kiire teie internet on?
+    - Kui kiire teie WIFI on?
+    - mai saa wifisse
+    - miks wifi ei tööta?
+    - teil on tasuta Internet?
+    - tre, miks wifi ei tööta?
+    - wifi on

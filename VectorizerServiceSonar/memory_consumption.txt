@@ -1,0 +1,15 @@
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+     5    319.4 MiB    319.4 MiB           1   @profile
+     6                                         def main():
+     7   3314.4 MiB   2995.0 MiB           2       t2vec_model = TextToEmbeddingModelPipeline(encoder="text_sonar_basic_encoder",
+     8    319.4 MiB      0.0 MiB           1                                              tokenizer="text_sonar_basic_encoder")
+     9   3314.4 MiB      0.0 MiB           2       sentences = ['My name is SONAR.',
+    10   3314.4 MiB      0.0 MiB           1       'I can embed the sentences into vectorial space.',
+    11   3314.4 MiB      0.0 MiB           1       'The output displays the memory consumed by each line in the code.',
+    12   3314.4 MiB      0.0 MiB           1       'Implementation of finding the memory consumption is very easy using a memory profiler as we directly call the decorator instead of writing a whole new code. ']
+    13
+    14   3370.7 MiB     56.3 MiB           1       print(t2vec_model.predict(sentences, source_lang="eng_Latn"))
+	
+	
+Model 'sonar_text_encoder.pt' size on disk - 2.85GB

@@ -1,0 +1,156 @@
+version: "3.1"
+
+intents:
+  - ajalehed_ajakirjad
+  - ametlik_teave
+  - andmebaasid
+  - arstlik_komisjon
+  - arvutite_kasutamine
+  - austria_saksa_šveits
+  - autoriõigus
+  - digiretsept
+  - e-kataloog_ester
+  - euroopa_liit
+  - filmiteave
+  - hambaravi
+  - infopäring
+  - kartograafiateave
+  - kirjastajaportaal
+  - kopeerimine
+  - kunstiteave
+  - lahtiolekuaeg
+  - lugejaarvutid
+  - lugejaks_registreerimine
+  - muusikateave
+  - näitused
+  - õigusinfo
+  - perearstiabi
+  - printimine
+  - raamatulaenutus
+  - raamatuvarad
+  - rekonstrueerimine
+  - rr_juhtimine
+  - rr_kontaktid
+  - ruumibroneeringud
+  - sisekord
+  - sõeluuringud
+  - töövõimetushüvitis
+  - ühiskonnateadused
+  - wifi
+
+responses:
+  
+  utter_ajalehed_ajakirjad:
+  - text: "Intent ajalehed_ajakirjad"
+  
+  utter_ametlik_teave:
+  - text: "Intent ametlik_teave"
+  
+  utter_andmebaasid:
+  - text: "Intent andmebaasid"
+  
+  utter_arstlik_komisjon:
+  - text: "Intent arstlik_komisjon"
+  
+  utter_arvutite_kasutamine:
+  - text: "Intent arvutite_kasutamine"
+  
+  utter_austria_saksa_šveits:
+  - text: "Intent austria_saksa_šveits"
+  
+  utter_autoriõigus:
+  - text: "Intent autoriõigus"
+  
+  utter_digiretsept:
+  - text: "Intent digiretsept"
+  
+  utter_e-kataloog_ester:
+  - text: "Intent e-kataloog_ester"
+  
+  utter_euroopa_liit:
+  - text: "Intent euroopa_liit"
+  
+  utter_filmiteave:
+  - text: "Intent filmiteave"
+  
+  utter_hambaravi:
+  - text: "Intent hambaravi"
+  
+  utter_infopäring:
+  - text: "Intent infopäring"
+  
+  utter_kartograafiateave:
+  - text: "Intent kartograafiateave"
+  
+  utter_kirjastajaportaal:
+  - text: "Intent kirjastajaportaal"
+  
+  utter_kopeerimine:
+  - text: "Intent kopeerimine"
+  
+  utter_kunstiteave:
+  - text: "Intent kunstiteave"
+  
+  utter_lahtiolekuaeg:
+  - text: "Intent lahtiolekuaeg"
+  
+  utter_lugejaarvutid:
+  - text: "Intent lugejaarvutid"
+  
+  utter_lugejaks_registreerimine:
+  - text: "Intent lugejaks_registreerimine"
+  
+  utter_muusikateave:
+  - text: "Intent muusikateave"
+  
+  utter_näitused:
+  - text: "Intent näitused"
+  
+  utter_õigusinfo:
+  - text: "Intent õigusinfo"
+  
+  utter_perearstiabi:
+  - text: "Intent perearstiabi"
+  
+  utter_printimine:
+  - text: "Intent printimine"
+  
+  utter_raamatulaenutus:
+  - text: "Intent raamatulaenutus"
+  
+  utter_raamatuvarad:
+  - text: "Intent raamatuvarad"
+  
+  utter_rekonstrueerimine:
+  - text: "Intent rekonstrueerimine"
+  
+  utter_rr_juhtimine:
+  - text: "Intent rr_juhtimine"
+  
+  utter_rr_kontaktid:
+  - text: "Intent rr_kontaktid"
+  
+  utter_ruumibroneeringud:
+  - text: "Intent ruumibroneeringud"
+  
+  utter_sisekord:
+  - text: "Intent sisekord"
+  
+  utter_sõeluuringud:
+  - text: "Intent sõeluuringud"
+  
+  utter_töövõimetushüvitis:
+  - text: "Intent töövõimetushüvitis"
+  
+  utter_hiskonnateadused:
+  - text: "Intent hiskonnateadused"
+  
+  utter_wifi:
+  - text: "Intent wifi"
+
+  utter_None:
+  - text: "Other answer"
+  
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,13 @@
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+     5    508.8 MiB    508.8 MiB           1   @profile
+     6                                         def main():
+     7   2650.6 MiB   2141.8 MiB           1       model = SentenceTransformer('sentence-transformers/LaBSE')
+     8   2650.6 MiB      0.0 MiB           1       sentences = ['My name is SONAR.',
+     9                                             'I can embed the sentences into vectorial space.',
+    10                                             'The output displays the memory consumed by each line in the code.',
+    11                                             'Implementation of finding the memory consumption is very easy using a memory profiler as we directly call the decorator instead of writing a whole new code. ']
+    12
+    13   2668.1 MiB     17.5 MiB           1       print(model.encode(sentences))
+	
+'LaBSE' folder size on disk - 5.27GB. Model 'pytorch_model.bin' size - 1.75 GB.

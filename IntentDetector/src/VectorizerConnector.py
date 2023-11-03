@@ -4,7 +4,7 @@ import datetime
 class VectorizerConnector(object):
     """A class used to connect to a vectorizer service"""
 
-    def __init__(self, address, port):
+    def __init__(self, address, port,lang="-"):
         self.address = address
         self.port = port
         if (self.address.startswith("http")):
@@ -14,8 +14,14 @@ class VectorizerConnector(object):
         self.lang=lang
         pass
 
-    def vectorize(self, utterance):
-        payload = {"q": utterance}
+    def vectorize(self, utterance,otherlang=""):
+
+        if otherlang != "":
+            payload = {"q": utterance, "lang": otherlang}
+        elif self.lang != "-":
+            payload = {"q": utterance, "lang": self.lang}
+        else:
+            payload = {"q": utterance}
         try:
             r = requests.get(self.urlPrefix + "vectorize", params=payload)
             jsonret=r.json()
