@@ -22,5 +22,5 @@ Directory [Rasa](Rasa) contains example Rasa bot project with custom intent dete
 
 ### Other
 
-- Contains training data *rahvusraamatukogu.json*, *sotsiaalkindlustusamet.json*, *kliendipöördumiste.json* for training 3 separate models (vector stores).
+- Contains several training data fails in .json format for training separate models (vector stores).
 - Contains script file *MergeFaiss.py* for merging several vector stores. Argument 'vec_stores' contains file with vector stores' names to merge, and argument 'out_model' contains name of the merged vector store.

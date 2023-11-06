@@ -56,7 +56,6 @@ class IntDetServerTrainer(object):
             self.trainData=trainData
             
         self.questions, self.answers = map(list, zip(*((d["text"], d["intent"]) for d in self.trainData)))
-        print(f"doVectorizing Language: {lang}")
         self.x, self.y, self.answerDict = IntDetUtils.prepareSentenceXY(self.ft, self.questions, self.answers, lang, self.logger)
         
         if len(self.x)>0:
@@ -260,6 +259,7 @@ class IntDetUtils(object):
         badExamples = []
         if minCount < k:
             log(f"At least {k} test examples for each intent are needed to perform cross-validation (currently minimum is {minCount})")
+            print(np.unique(unshuffledAnswers, return_counts=True))
             return np.zeros(0, dtype=int), badExamples
         X, y, que, ans, kf = IntDetUtils.getKFold(unshuffledX, unshuffledY, unshuffledQuestions, unshuffledAnswers, k=k)
         confMatrix = np.zeros((len(answerDict), len(answerDict)), dtype=int)
