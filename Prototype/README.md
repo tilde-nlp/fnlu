@@ -52,7 +52,9 @@ There are 3 institutions with private data. To train the intent detector for use
 	- and 'est_Latn' in *lang* parameter.
 	
 `http://.../train?newmodel=0&name=kriisijuhtimine&lang=est_Latn&data=http://kriisijuhtimine_intitution:port`
+
 `http://.../train?newmodel=0&name=rahvusraamatukogu&lang=est_Latn&data=http://rahvusraamatukogu_intitution:port`
+
 `http://.../train?newmodel=0&name=sotsiaalkindlustusamet&lang=est_Latn&data=http://sotsiaalkindlustusamet_intitution:port`
 
 Now the Intent Detection Web Service on the Server recognizes general intents and intents of each involved institution.
