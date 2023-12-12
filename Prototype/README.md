@@ -29,7 +29,7 @@ There are 3 institutions with private data. To train the intent detector for use
 	    - utterance in *q* parameter,
 		- and 'est_Latn' in *lang* parameter.
 		
-	`http://.../intents?lang=est_Latn&data=[{"text":"puude taotlemine kus on", "intent":"puude taotlemine"},{"text":"Kuidas pikendada kaarti?", "intent":"puudega isiku kaart"},...]`
+	`http://.../intents?lang=est_Latn&q=mida teeb pensioni eas isik puudekaardiga`
 
 
 ### Case 2 - single common intent detection system trained in federated way
@@ -37,8 +37,8 @@ There are 3 institutions with private data. To train the intent detector for use
 - start the Vectorizer Web Service on the Server, the code is distributed as a container. You can use either [../VectorizerService](../VectorizerService) or [../VectorizerServiceSonar](../VectorizerServiceSonar).
 - start the Intent Detection Web Service on the Server specifying command ACT="serve" and Vectorizer Service's URL and port.
 
-- train the Intent Detection model that recognizes intents of general nature like 'greetings', 'thank you', etc. (to better suit your needs, please add more examples to this file) by calling the Intent Detection Web Service's method *train* and passing
-	- the content of [../Other/general.json](../general.json) file in *data* parameter,
+- train the Intent Detection model that recognizes intents of general nature like 'greetings', 'thank you', etc. (to better suit your needs, please add more examples to [../Other/general.json](../Other/general.json)) by calling the Intent Detection Web Service's method *train* and passing
+	- the content of [../Other/general.json](../Other/general.json) file in *data* parameter,
 	- value 'general' in *name* parameter,
     - 1 in *newmodel* parameter,
 	- and 'est_Latn' in *lang* parameter.
