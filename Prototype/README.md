@@ -1,22 +1,22 @@
 # Prototype
 This is the prototype of the intent detector trained using federated learning approach. Instructions bellow describe steps to set up the network with several client nodes and one server node.
 
-##Use cases
+## Use cases
 
 ### Case 1 - local intent detection systems
 
 There are 3 institutions with private data. To train the intent detector for use of the institution's Virtual Assistant particular institution must perform the following steps:
 
-- start the Vectorizer Web Service on institution premisses, the code is distributed as a container. You can use either [VectorizerService](VectorizerService) or [VectorizerServiceSonar](VectorizerServiceSonar).
+- start the Vectorizer Web Service on institution premisses, the code is distributed as a container. You can use either [../VectorizerService](../VectorizerService) or [../VectorizerServiceSonar](../VectorizerServiceSonar).
 - start the Intent Detection Web Service on institution premisses specifying command ACT="serve" and Vectorizer Service's URL and port.
 
-- if institution uses VA implemented in rasa (see example [../rasa](rasa) project):
+- if institution uses VA implemented in rasa (see example [../rasa](../rasa) project):
     - specify your intents and examples in *data/nlu.yml* and responses to the intents in *domain.yml* as usually for the rasa project
 	- in *config.yml* specify pipline including custom intent detection class *CustomIntentDetector.FederatedIntentDetector* and parameter *intdeturl* with link to the started Intent Detection Web Service and parameter *modelname* with the name of this VA
 	- train the VA from the command line using command 'rasa train nlu'. 
 	
 - if institution uses custom VA that calls intent detector through the API:
-    - prepare training data in the .json format. See files *kriisijuhtimine.json*, *rahvusraamatukogu.json*, *sotsiaalkindlustusamet.json* in the folder [../Other](Other).
+    - prepare training data in the .json format. See files *kriisijuhtimine.json*, *rahvusraamatukogu.json*, *sotsiaalkindlustusamet.json* in the folder [../Other](../Other).
 	- train the Intent Detection model by calling the Intent Detection Web Service's method *train* and passing
 	    - the content of your .json file in *data* parameter,
 		- the name of your dataset in *name* parameter,
@@ -34,11 +34,11 @@ There are 3 institutions with private data. To train the intent detector for use
 
 ### Case 2 - single common intent detection system trained in federated way
 
-- start the Vectorizer Web Service on the Server, the code is distributed as a container. You can use either [VectorizerService](VectorizerService) or [VectorizerServiceSonar](VectorizerServiceSonar).
+- start the Vectorizer Web Service on the Server, the code is distributed as a container. You can use either [../VectorizerService](../VectorizerService) or [../VectorizerServiceSonar](../VectorizerServiceSonar).
 - start the Intent Detection Web Service on the Server specifying command ACT="serve" and Vectorizer Service's URL and port.
 
 - train the Intent Detection model that recognizes intents of general nature like 'greetings', 'thank you', etc. (to better suit your needs, please add more examples to this file) by calling the Intent Detection Web Service's method *train* and passing
-	- the content of [../Other/general.json](general.json) file in *data* parameter,
+	- the content of [../Other/general.json](../general.json) file in *data* parameter,
 	- value 'general' in *name* parameter,
     - 1 in *newmodel* parameter,
 	- and 'est_Latn' in *lang* parameter.
@@ -57,4 +57,4 @@ There are 3 institutions with private data. To train the intent detector for use
 
 Now the Intent Detection Web Service on the Server recognizes general intents and intents of each involved institution.
 
-If you wish to use this Intent Detection WS for the VA implemented in rasa, in *config.yml* specify pipline including custom intent detection class *CustomIntentDetector.FederatedIntentDetector* and parameter *mainintdeturl* with the link to the Intent Detection Web Service on the Server. Also add functionality of passing control to the Virtual Assistant whose intent has been recognized. Module [../rasa/CustomIntentDetector.py](CustomIntentDetector.py) starting from Line 106.
+If you wish to use this Intent Detection WS for the VA implemented in rasa, in *config.yml* specify pipline including custom intent detection class *CustomIntentDetector.FederatedIntentDetector* and parameter *mainintdeturl* with the link to the Intent Detection Web Service on the Server. Also add functionality of passing control to the Virtual Assistant whose intent has been recognized. Module [../rasa/CustomIntentDetector.py](../rasa/CustomIntentDetector.py) starting from Line 106.
