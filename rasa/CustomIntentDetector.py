@@ -86,15 +86,26 @@ class FederatedIntentDetector(IntentClassifier, GraphComponent):
         payload = {
             'lang':'est_Latn',
             'q':text}
-
-        url=self.component_config['intdeturl']
+        
+        #using general intent detector from the Server
+        url=self.component_config['mainintdeturl'] 
+        
+        #for using local intent detection model
+        #url=self.component_config['intdeturl']
+        
         response = requests.get(f"{url}/intents", params=payload, headers={'Accept':'text/json'})
             
         if response.status_code == 200:
             results=json.loads(response.content)
             
             for item in results['intents']:
-                label_ranking.append({'name':item['intentid'], 'confidence':item['confidence']})
+                if item['source'] == self.component_config['modelname']:
+                    #intent can be handled by this virtual assistant
+                    label_ranking.append({'name':item['intentid'], 'confidence':item['confidence']})
+                else:
+                    #intent belongs to a different virtual assistant
+                    #re-routing can be implemented here ...
+                    print(f"Detected intent of {item['source']} virtual assistant")
                 
             if len(label_ranking)>0:
                 label=label_ranking[0]

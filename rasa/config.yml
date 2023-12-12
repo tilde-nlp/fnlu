@@ -13,7 +13,8 @@ pipeline:
 - name: RegexFeaturizer
 - name: LexicalSyntacticFeaturizer
 - name: CustomIntentDetector.FederatedIntentDetector
-  intdeturl: http://tlddaigad:22220
+  intdeturl: http://localhost:22220
+  mainintdeturl: http://localhost:12345
   modelname: "rahvusraamatukogu"
 
 policies:

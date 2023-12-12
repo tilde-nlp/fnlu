@@ -68,7 +68,7 @@ Output:
 POST and GET requests available
 
 Example of API call:
-http://tlddaigad:22221/train?newmodel=0&name=sotsiaalkindlustusamet&data=http::\/tlddaigad:22222&lang=est_Latn
+http://localhost:22221/train?newmodel=0&name=sotsiaalkindlustusamet&data=http::\/localhost:22222&lang=est_Latn
 
 Output: 
 `{"status": "SUCCESS"}`
