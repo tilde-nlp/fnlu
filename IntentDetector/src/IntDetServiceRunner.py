@@ -34,49 +34,6 @@ class IntDetTrainHandler(tornado.web.RequestHandler):
     def initialize(self, detector : IntDetServerTrainer):
         self.detector = detector
 
-    async def get(self):
-        data = self.get_query_argument("data", "", False)
-        if len(data)==0:
-            self.write('{"status": "ERROR: No data received by Web Service!"}')
-        else:
-            lang = self.get_argument("lang", "", False)
-            #est_Latn - Estonian
-            
-            source = self.get_query_argument("name", "", False)
-            #dataset name
-            
-            new = self.get_query_argument("newmodel", "1", False)
-            #new == '1' - create new model
-            #new == '0' - merge data to the same model
-
-            parsed_url = urlparse(data)
-            if bool(parsed_url.scheme):
-            #'data' is url, get local model's parameters (from the model that is trained localy)
-                response = requests.get(f"{data}/getlocalparameters")
-                
-                if response.status_code == 200:
-                    binary_data = response.content
-                    model=FAISS.deserialize_from_bytes(embeddings=FakeEmbeddings(size=1), serialized=binary_data)
-                    
-                    returnValue = await tornado.ioloop.IOLoop.current().run_in_executor(None, self.detector.mergeModel,model,new)
-                    returnText = json.dumps(returnValue, indent=2, ensure_ascii=False)
-                    self.write(returnText)
-                else:
-                    print(f"Failed to retrieve parameters from {data}/getlocalparameters. Status code: {response.status_code}")
-                    self.write('{"status": "ERROR: Failed to retrieve parameters from {data}/getlocalparameters."}')
-            else:
-            #'data' is text training data in .json format
-                try:
-                    trainData = json.loads(data)
-
-                    returnValue = await tornado.ioloop.IOLoop.current().run_in_executor(None, self.detector.doVectorizing,trainData,lang)
-                    returnValue = await tornado.ioloop.IOLoop.current().run_in_executor(None, self.detector.doTraining,source,new)
-
-                    returnText = json.dumps(returnValue, indent=2, ensure_ascii=False)
-                    self.write(returnText)
-                except:
-                    self.write('{"status": "ERROR: Failed to train with new data, probably wrong format."}')
-
     async def post(self):
         data = self.get_argument("data", "", False)
         if len(data)==0:
@@ -99,11 +56,14 @@ class IntDetTrainHandler(tornado.web.RequestHandler):
                 
                 if response.status_code == 200:
                     binary_data = response.content
-                    model=FAISS.deserialize_from_bytes(embeddings=FakeEmbeddings(size=1), serialized=binary_data)
+                    if len(binary_data)==0:
+                        self.write("{\"status\": \"ERROR: No binary data received, probably model on {data} has not been trained. \"}")
+                    else:
+                        model=FAISS.deserialize_from_bytes(embeddings=FakeEmbeddings(size=1), serialized=binary_data)
                     
-                    returnValue = await tornado.ioloop.IOLoop.current().run_in_executor(None, self.detector.mergeModel,model,new)
-                    returnText = json.dumps(returnValue, indent=2, ensure_ascii=False)
-                    self.write(returnText)
+                        returnValue = await tornado.ioloop.IOLoop.current().run_in_executor(None, self.detector.mergeModel,model,new)
+                        returnText = json.dumps(returnValue, indent=2, ensure_ascii=False)
+                        self.write(returnText)
                 else:
                     print(f"Failed to retrieve parameters from {data}/getlocalparameters. Status code: {response.status_code}")
                     self.write("{\"status\": \"ERROR: Failed to retrieve parameters from {data}/getlocalparameters.\"}")
@@ -113,12 +73,18 @@ class IntDetTrainHandler(tornado.web.RequestHandler):
                     trainData = json.loads(data)
 
                     returnValue = await tornado.ioloop.IOLoop.current().run_in_executor(None, self.detector.doVectorizing,trainData,lang)
+                    if (returnValue==False):
+                        self.write('{"status": "ERROR: Failed to vectorize data. Failed to communicate with vectorization service or wrong data format."}')
+                        return
                     returnValue = await tornado.ioloop.IOLoop.current().run_in_executor(None, self.detector.doTraining,source,new)
-                    
+
                     returnText = json.dumps(returnValue, indent=2, ensure_ascii=False)
                     self.write(returnText)
                 except:
                     self.write('{"status": "ERROR: Failed to train with new data, probably wrong format."}')
+                    
+    async def get(self):
+        return await self.post()
                 
 class GetParamsHandler(tornado.web.RequestHandler):
     def initialize(self, detector : IntDetServerTrainer):

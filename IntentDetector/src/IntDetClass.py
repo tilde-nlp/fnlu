@@ -54,12 +54,15 @@ class IntDetServerTrainer(object):
         self.logger.clearFile()                  
         if trainData != "":
             self.trainData=trainData
-            
+    
         self.questions, self.answers = map(list, zip(*((d["text"], d["intent"]) for d in self.trainData)))
         self.x, self.y, self.answerDict = IntDetUtils.prepareSentenceXY(self.ft, self.questions, self.answers, lang, self.logger)
-        
+
         if len(self.x)>0:
             IntDetUtils.writeDict(f"{self.modelName}.intentmap.json", self.answerDict)
+            return True
+        else:
+            return False
 
     def doTraining(self, source='', new='1'):
         if source=='':
@@ -82,8 +85,10 @@ class IntDetServerTrainer(object):
             if (new=='0'):
                 self.model.merge_from(newmodel)
             else:
-                del self.model
+                if self.model:
+                    del self.model
                 self.model=newmodel
+            print(f"Saving {self.modelName}", flush=True)
             self.model.save_local(self.modelName)
             
             return ({"status": f"SUCCESS"})
@@ -215,7 +220,7 @@ class IntDetUtils(object):
         else:
             if logger:
                 logger.writePerc(0)
-            print(answers)    
+    
             sentenceVectors = []
             num_q=len(questions)
 
@@ -383,7 +388,7 @@ class IntDetUtils(object):
 
     @staticmethod
     def query(ft, model, question, lang, items=5):
-        print(f"queryLanguage: {lang}")
+
         x, _, _ = IntDetUtils.prepareSentenceXY(ft, [question], None, lang, None)
         output=[]
             

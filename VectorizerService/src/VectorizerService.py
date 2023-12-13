@@ -35,6 +35,7 @@ class VectorizeRequestHandler(tornado.web.RequestHandler):
 
     async def get(self):
         q = self.get_query_argument("q", "", False)
+        #print(q,flush=True)
         try:
             qlist = json.loads(q)
         except:

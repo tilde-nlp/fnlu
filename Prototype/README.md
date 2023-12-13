@@ -51,12 +51,25 @@ There are 3 institutions with private data. To train the intent detector for use
     - 0 in *newmodel* parameter,
 	- and 'est_Latn' in *lang* parameter.
 	
-`http://.../train?newmodel=0&name=kriisijuhtimine&lang=est_Latn&data=http://kriisijuhtimine_intitution:port`
+`http://.../train?newmodel=0&data=http://kriisijuhtimine_intitution:port`
 
-`http://.../train?newmodel=0&name=rahvusraamatukogu&lang=est_Latn&data=http://rahvusraamatukogu_intitution:port`
+`http://.../train?newmodel=0&data=http://rahvusraamatukogu_intitution:port`
 
-`http://.../train?newmodel=0&name=sotsiaalkindlustusamet&lang=est_Latn&data=http://sotsiaalkindlustusamet_intitution:port`
+`http://.../train?newmodel=0&data=http://sotsiaalkindlustusamet_intitution:port`
 
 Now the Intent Detection Web Service on the Server recognizes general intents and intents of each involved institution.
 
 If you wish to use this Intent Detection WS for the VA implemented in rasa, in *config.yml* specify pipline including custom intent detection class *CustomIntentDetector.FederatedIntentDetector* and parameter *mainintdeturl* with the link to the Intent Detection Web Service on the Server. Also add functionality of passing control to the Virtual Assistant whose intent has been recognized. Module [../rasa/CustomIntentDetector.py](../rasa/CustomIntentDetector.py) starting from Line 106.
+
+## Training
+
+For training models the scrip [../Other/trainmodel.py](../Other/trainmodel.py) can be used. Prior to training specify required values in configuration file [../Other/trainmodel.cfg](../Other/trainmodel.cfg).
+
+`python ../Other/trainmodel.py`
+
+- For training a single model change the following values in the *trainmodel.cfg* file:
+    - in *\[main_url\]* section specify the URL of the Intent Detection Web Service under *url* key 
+    - in *\[json_training_data\]* section specify the path to .json training data, specify the name of the data,  for Estonian language in *lang* key must be 'est_Latn'.
+- For merging institution models with the Server model change the following values in the *trainmodel.cfg* file:
+    - in *\[main_url\]* section specify the URL of the Intent Detection Web Service on the Server  under *url* key
+	- in *\[remote_urls\]* section list the URLs of the Intent Detection Web Services that you wish to merge with the central model. 
