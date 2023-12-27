@@ -18,7 +18,11 @@ In addition to the remote training sites, a central training site plays a pivota
 
 The outcome of this federated training process is a central bot equipped with the federated NLU model. This central bot possesses the capability to identify intents irrespective of their origin, as the federated NLU model recognizes intents defined in shared training data and any of the remote sites. This innovative approach ensures a versatile and inclusive bot system that effectively addresses the intricate needs of diverse organizations.
 
+The process of training intent detection models traditionally involves utilizing a substantial and representative dataset. However, when dealing with data from diverse organizations, it becomes imperative to acknowledge potential sensitivities, with data owners being understandably hesitant to disclose the content of their data due to various reasons such as data quality, personal or classified information, or sensitive user queries posed to the bot.
 
+The federated learning approach implemented in this project offers an effective solution to this privacy challenge. By employing federated learning, the central federated NLU model is trained without the need for sensitive data to leave the remote training sites. At no point does the central federated training process directly access or utilize the training data. Instead, the training data is vectorized on the remote site, and these vectors are utilized to compute the parameters of the local NLU model. Crucially, the raw data itself is never stored within the model.
+
+Upon completion of the federated training process, only the model parameters and vectors are disclosed to the central training site. This meticulous approach ensures that the data, in its textual form, remains securely within the premises of the data holder. Only binary representations of parameters are shared, safeguarding the privacy of the data and significantly reducing the load associated with data exchange. This not only mitigates privacy concerns but also optimizes the efficiency of the overall federated learning system.
 
 ## Content
 This repository contains 6 directories.
