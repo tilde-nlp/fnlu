@@ -1,5 +1,5 @@
 # Federated NLU
-This repository hosts both the software for federated learning and a prototype implementation for the project:: EKTB78 Liitõppe rakendamise võimalused dialoogiandmete põhjal
+This repository hosts both the software for federated learning and a prototype implementation for the project: EKTB78 Liitõppe rakendamise võimalused dialoogiandmete põhjal
 
 ## Description
 Nowadays, many companies and institutions use virtual assistants to relieve the work of customer support professionals and ensure continued communication with the organization beyond business hours. A reliable, high-quality virtual assistant can not be developed without a good Natural Language Understanding (NLU) model, particularly an intent detector.
