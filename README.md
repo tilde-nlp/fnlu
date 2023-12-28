@@ -24,8 +24,8 @@ The federated learning approach implemented in this project offers an effective 
 
 Upon completion of the federated training process, only the model parameters and vectors are disclosed to the central training site. This meticulous approach ensures that the data, in its textual form, remains securely within the premises of the data holder. Only binary representations of parameters are shared, safeguarding the privacy of the data and significantly reducing the load associated with data exchange. This not only mitigates privacy concerns but also optimizes the efficiency of the overall federated learning system.
 
-## Content
-This repository contains 6 directories.
+## Software for federated training and intent detection
+In this repository, you'll find all the software related to federated training and intent detection implemented in this project organized within the following folders:
 
 ### VectorizerService
 
@@ -39,15 +39,17 @@ Directory [VectorizerServiceSonar](VectorizerServiceSonar) contains container co
 
 Directory [IntentDetector](IntentDetector) contains the container code for the intent detector.
 
-### rasa
-
-Directory [rasa](rasa) contains an example Rasa bot project with a custom intent detector trained/accessed through the Web Service.
-
 ### Other
 
 - Contains several training data fails in .json format for training separate models (vector stores).
 - Contains script file *MergeFaiss.py* for merging several vector stores. Argument 'vec_stores' contains a file with vector stores' names to merge, and argument 'out_model' contains the name of the merged vector store.
 
-### Prototype
+## Product prototype
+The product prototype implemented in this project is organized within the following folders:
 
+### rasa
+
+Directory [rasa](rasa) contains an example Rasa bot project with a custom intent detector trained/accessed through the Web Service.
+
+### Prototype
 Directory [Prototype](Prototype) contains setup instructions on how to set up the system with several client nodes and one server node.
