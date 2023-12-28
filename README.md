@@ -27,11 +27,11 @@ Upon completion of the federated training process, only the model parameters and
 ## Software for federated training and intent detection
 In this repository, you'll find all the software related to federated training and intent detection implemented in this project organized within the following folders:
 
-### VectorizerService
+### VectorizerService & VectorizerServiceSonar
+
+To configure the Federated NLU service, you have the option to choose between two different vectorization services employing LaBSE and SONAR embedding models. For detailed information, please refer to the respective README files located in both directories.
 
 Directory [VectorizerService](VectorizerService) contains container code for the vectorizer based on the LaBSE embedding model.
-
-### VectorizerServiceSonar
 
 Directory [VectorizerServiceSonar](VectorizerServiceSonar) contains container code for the vectorizer based on the SONAR embedding model.
 
