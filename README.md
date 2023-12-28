@@ -37,12 +37,17 @@ Directory [VectorizerServiceSonar](VectorizerServiceSonar) contains container co
 
 ### IntentDetector
 
-Directory [IntentDetector](IntentDetector) contains the container code for the intent detector.
+The [IntentDetector](IntentDetector) directory houses the code for the federated intent detector. This code serves a dual purpose, being utilized both in the training of intent detection models during the federated learning process and for real-time inference, specifically in runtime intent detection. For comprehensive details,  consult the README files located in the directory.
 
 ### Other
 
-- Contains several training data fails in .json format for training separate models (vector stores).
-- Contains script file *MergeFaiss.py* for merging several vector stores. Argument 'vec_stores' contains a file with vector stores' names to merge, and argument 'out_model' contains the name of the merged vector store.
+Within the [Other](Other) directory, you'll find:
+
+- Training data files in .json format, utilized for testing federated NLU model training and evaluating model quality in this project.
+
+//ToDo: add a table/list with data files, source and statistics
+
+- The training script file MergeFaiss.py that is designed for merging multiple vector stores. The 'vec_stores' argument references a file containing the names of vector stores to merge, while the 'out_model' argument specifies the name of the merged vector store.
 
 ## Product prototype
 The product prototype implemented in this project is organized within the following folders:
