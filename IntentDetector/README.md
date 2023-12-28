@@ -55,7 +55,7 @@ Example of API call:
 `http://.../intents?q=Kas%20originaalkunstist%20tohib%20teha%20koopiaid&lang=est_Latn`
 
 Output:
-`{ "text": "Kas originaalkunstist tohib teha koopiaid", "intents": [ { "intentid": "Infop‰ring", "confidence": 0.9439612239599228, "source": "raamatukogu" }, { "intentid": "Filmiteave", "confidence": 0.3423901915550232, "source": "raamatukogu" }, ... ] }`
+`{ "text": "Kas originaalkunstist tohib teha koopiaid", "intents": [ { "intentid": "Infop√§ring", "confidence": 0.9439612239599228, "source": "raamatukogu" }, { "intentid": "Filmiteave", "confidence": 0.3423901915550232, "source": "raamatukogu" }, ... ] }`
 
 2. Method *train* trains and/or merges models
 	- parameter *data*
@@ -83,4 +83,16 @@ Example of API call:
 
 Output: model parameters in binary format
 	
-@Tilde, 2023
+Copyright 2023 Tilde SIA
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
