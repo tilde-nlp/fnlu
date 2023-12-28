@@ -50,6 +50,11 @@ Within the [Other](Other) directory, you'll find:
 - The training script file MergeFaiss.py that is designed for merging multiple vector stores. The 'vec_stores' argument references a file containing the names of vector stores to merge, while the 'out_model' argument specifies the name of the merged vector store.
 
 ## Product prototype
+
+The product prototype developed in this project comprises two components. Firstly, there is an example implementation demonstrating how federated learning can be incorporated into Rasa bot software (https://rasa.com). This example provides guidance on integrating federated learning into the original Rasa source code, and a similar approach can be employed for integration into other software products based on Rasa technology, such as [Bürokratt](https://www.kratid.ee/en/burokratt).
+
+Additionally, there are also setup instructions detailing how to set up the federated NLU system with one central site and multiple remote sites. These instructions serve as a comprehensive guide for configuring and deploying the system in a distributed environment.
+
 The product prototype implemented in this project is organized within the following folders:
 
 ### rasa
