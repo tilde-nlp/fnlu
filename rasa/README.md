@@ -2,7 +2,7 @@
 Example Rasa project that uses custom intent detector
 
 ## Setup
-1. Install Rasa using instructions ![https://rasa.com/docs/rasa/installation/environment-set-up/](https://rasa.com/docs/rasa/installation/environment-set-up/)
+1. Install Rasa using instructions (https://rasa.com/docs/rasa/installation/environment-set-up/)
 
 2. Start the Intent detection Web Service's container. 
 
