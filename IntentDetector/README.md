@@ -82,7 +82,9 @@ Example of API call:
 `http://.../getlocalparameters`
 
 Output: model parameters in binary format
-	
+
+# License
+
 Copyright 2023 Tilde SIA
 
 Licensed under the Apache License, Version 2.0 (the "License");
