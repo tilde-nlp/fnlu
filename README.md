@@ -62,4 +62,4 @@ The product prototype implemented in this project is organized within the follow
 Directory [rasa](rasa) contains an example Rasa bot project with a custom intent detector trained/accessed through the Web Service.
 
 ### Prototype
-Directory [Prototype](Prototype) contains setup instructions on how to set up the system with several client nodes and one server node.
+Directory [Prototype](Prototype) contains setup instructions on how to set up the system with several remote nodes and one central node.
