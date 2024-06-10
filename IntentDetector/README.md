@@ -42,6 +42,20 @@ This option is used if you wish
 
 Parameter *-v* links the host directory with the directory in container.
 
+3. To run vectorizer and intent detector on the same network create the network and use it's name with *--network* parameter when starting containers.
+
+- create the network
+
+`docker network create my-network`
+
+- start vectorizer container
+
+`docker run -it -p 12345:12345 --name vec --network my-network --rm vector_app`
+
+- start intent detector container
+
+`docker run -it --rm -p 22222:8888 -v <host_dir>:<container_dir> -e ACT="serve" -e MODEL_PREFIX=<MODEL_PREFIX_WITH_PATH> -e VECTORIZER_ADDRESS=<VECTORIZER_ADDRESS> -e VECTORIZER_PORT=<VECTORIZER_PORT> -e LANG=est_Latn –name federated_server --network my-network intdet`
+
 ## Web Service API
 
 The Web Service has several methods:
