@@ -45,27 +45,14 @@ Within the [Other](Other) directory, you'll find:
 
 - Training data files in .json format, utilized for testing federated NLU model training and evaluating model quality in this project.
 
+For the Estonian experiments, we constructed three datasets using data provided by RIA from the Bürokratt project.
+
 | Dataset | Number of intents | Number of training examples |
-|---------|-------------------|-----------------------------|
-| Rahvusraamatukogu (National library)| 36 | 1 104 | 
+|---------|------------------:|----------------------------:|
+| Rahvusraamatukogu (National library)| 36 | 1104 | 
+| Sotsiaalkindlustusamet (Social Insurance) | 7 | 79 |
+| Kriisijuhtimine (Crisis management) | 23 | 287 |
 
-Sotsiaalkindlustusamet 
-Social Insurance 
-
-7 
-
-79 
-
-Kriisijuhtimine 
-Crisis management 
-
-23 
-
-287 
-
-
-
-//ToDo: add a table/list with data files, source and statistics
 
 - The training script file MergeFaiss.py that is designed for merging multiple vector stores. The 'vec_stores' argument references a file containing the names of vector stores to merge, while the 'out_model' argument specifies the name of the merged vector store.
 
